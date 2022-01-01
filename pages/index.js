@@ -5,22 +5,22 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
 	return (
 		<>
-			<div class="spinner-wrapper">
-				<div class="spinner">
-					<div class="bounce1"></div>
-					<div class="bounce2"></div>
-					<div class="bounce3"></div>
+			<div className="spinner-wrapper">
+				<div className="spinner">
+					<div className="bounce1"></div>
+					<div className="bounce2"></div>
+					<div className="bounce3"></div>
 				</div>
 			</div>
 
-			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-				<div class="container">
-					<a class="navbar-brand logo-image" href="index.html">
+			<nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+				<div className="container">
+					<a className="navbar-brand logo-image" href="index.html">
 						<img src="images/logo.svg" alt="alternative" />
 					</a>
 
 					<button
-						class="navbar-toggler"
+						className="navbar-toggler"
 						type="button"
 						data-toggle="collapse"
 						data-target="#navbarsExampleDefault"
@@ -28,43 +28,44 @@ export default function Home() {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-awesome fas fa-bars"></span>
-						<span class="navbar-toggler-awesome fas fa-times"></span>
+						<span className="navbar-toggler-awesome fas fa-bars"></span>
+						<span className="navbar-toggler-awesome fas fa-times"></span>
 					</button>
 
 					<div
-						class="collapse navbar-collapse"
+						className="collapse navbar-collapse"
 						id="navbarsExampleDefault"
 					>
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
+						<ul className="navbar-nav ml-auto">
+							<li className="nav-item">
 								<a
-									class="nav-link page-scroll"
+									className="nav-link page-scroll"
 									href="index.html#header"
 								>
-									HOME <span class="sr-only">(current)</span>
+									HOME{" "}
+									<span className="sr-only">(current)</span>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li className="nav-item">
 								<a
-									class="nav-link page-scroll"
+									className="nav-link page-scroll"
 									href="index.html#features"
 								>
 									FEATURES
 								</a>
 							</li>
-							<li class="nav-item">
+							<li className="nav-item">
 								<a
-									class="nav-link page-scroll"
+									className="nav-link page-scroll"
 									href="index.html#details"
 								>
 									DETAILS
 								</a>
 							</li>
 
-							<li class="nav-item dropdown">
+							<li className="nav-item dropdown">
 								<a
-									class="nav-link dropdown-toggle page-scroll"
+									className="nav-link dropdown-toggle page-scroll"
 									href="index.html#video"
 									id="navbarDropdown"
 									role="button"
@@ -74,49 +75,49 @@ export default function Home() {
 									VIDEO
 								</a>
 								<div
-									class="dropdown-menu"
+									className="dropdown-menu"
 									aria-labelledby="navbarDropdown"
 								>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="article-details.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											ARTICLE DETAILS
 										</span>
 									</a>
-									<div class="dropdown-items-divide-hr"></div>
+									<div className="dropdown-items-divide-hr"></div>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="terms-conditions.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											TERMS CONDITIONS
 										</span>
 									</a>
-									<div class="dropdown-items-divide-hr"></div>
+									<div className="dropdown-items-divide-hr"></div>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="privacy-policy.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											PRIVACY POLICY
 										</span>
 									</a>
 								</div>
 							</li>
 
-							<li class="nav-item">
+							<li className="nav-item">
 								<a
-									class="nav-link page-scroll"
+									className="nav-link page-scroll"
 									href="index.html#pricing"
 								>
 									PRICING
 								</a>
 							</li>
 						</ul>
-						<span class="nav-item">
-							<a class="btn-outline-sm" href="log-in.html">
+						<span className="nav-item">
+							<a className="btn-outline-sm" href="log-in.html">
 								LOG IN
 							</a>
 						</span>
@@ -124,70 +125,70 @@ export default function Home() {
 				</div>
 			</nav>
 
-			<header id="header" class="ex-2-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
+			<header id="header" className="ex-2-header">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
 							<h1>Sign Up</h1>
 							<p>
 								Fill out the form below to sign up for Tivo.
 								Already signed up? Then just{" "}
-								<a class="white" href="log-in.html">
+								<a className="white" href="log-in.html">
 									Log In
 								</a>
 							</p>
-							<div class="form-container">
+							<div className="form-container">
 								<form
 									id="signUpForm"
 									data-toggle="validator"
 									data-focus="false"
 								>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="email"
-											class="form-control-input"
+											className="form-control-input"
 											id="semail"
 											required
 										/>
 										<label
-											class="label-control"
+											className="label-control"
 											for="semail"
 										>
 											Email
 										</label>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="sname"
 											required
 										/>
 										<label
-											class="label-control"
+											className="label-control"
 											for="sname"
 										>
 											Name
 										</label>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="spassword"
 											required
 										/>
 										<label
-											class="label-control"
+											className="label-control"
 											for="spassword"
 										>
 											Password
 										</label>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group checkbox">
+									<div className="form-group checkbox">
 										<input
 											type="checkbox"
 											id="sterms"
@@ -200,22 +201,22 @@ export default function Home() {
 										</a>{" "}
 										and{" "}
 										<a href="terms-conditions.html">
-											Terms Conditions
+											Ter&apos;s Conditions
 										</a>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<button
 											type="submit"
-											class="form-control-submit-button"
+											className="form-control-submit-button"
 										>
 											SIGN UP
 										</button>
 									</div>
-									<div class="form-message">
+									<div className="form-message">
 										<div
 											id="smsgSubmit"
-											class="h3 text-center hidden"
+											className="h3 text-center hidden"
 										></div>
 									</div>
 								</form>
