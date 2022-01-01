@@ -29,16 +29,15 @@ function MyApp({ Component, pageProps }) {
 				<link href="css/styles.css" rel="stylesheet" />
 
 				<link rel="icon" href="images/favicon.png" />
-
-				<Script src="js/jquery.min.js"></Script>
-				<Script src="js/popper.min.js"></Script>
-				<Script src="js/bootstrap.min.js"></Script>
-				<Script src="js/jquery.easing.min.js"></Script>
-				<Script src="js/swiper.min.js"></Script>
-				<Script src="js/jquery.magnific-popup.js"></Script>
-				<Script src="js/validator.min.js"></Script>
-				<Script src="js/Scripts.js"></Script>
 			</Head>
+			<Script src="js/jquery.min.js"></Script>
+			<Script src="js/popper.min.js"></Script>
+			<Script src="js/bootstrap.min.js"></Script>
+			<Script src="js/jquery.easing.min.js"></Script>
+			<Script src="js/swiper.min.js"></Script>
+			<Script src="js/jquery.magnific-popup.js"></Script>
+			<Script src="js/validator.min.js"></Script>
+			<Script src="js/Scripts.js"></Script>
 			<Component {...pageProps} />
 		</>
 	);
