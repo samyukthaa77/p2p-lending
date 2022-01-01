@@ -152,7 +152,7 @@ export default function Home() {
 										/>
 										<label
 											className="label-control"
-											for="semail"
+											htmlFor="semail"
 										>
 											Email
 										</label>
@@ -167,7 +167,7 @@ export default function Home() {
 										/>
 										<label
 											className="label-control"
-											for="sname"
+											htmlFor="sname"
 										>
 											Name
 										</label>
@@ -182,7 +182,7 @@ export default function Home() {
 										/>
 										<label
 											className="label-control"
-											for="spassword"
+											htmlFor="spassword"
 										>
 											Password
 										</label>
