@@ -30,14 +30,14 @@ function MyApp({ Component, pageProps }) {
 
 				<link rel="icon" href="images/favicon.png" />
 			</Head>
-			<script src="js/jquery.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/jquery.easing.min.js"></script>
-			<script src="js/swiper.min.js"></script>
-			<script src="js/jquery.magnific-popup.js"></script>
-			<script src="js/validator.min.js"></script>
-			<script src="js/scripts.js"></script>
+			<script async src="js/jquery.min.js"></script>
+			<script async src="js/popper.min.js"></script>
+			<script async src="js/bootstrap.min.js"></script>
+			<script async src="js/jquery.easing.min.js"></script>
+			<script async src="js/swiper.min.js"></script>
+			<script async src="js/jquery.magnific-popup.js"></script>
+			<script async src="js/validator.min.js"></script>
+			<script async src="js/scripts.js"></script>
 			<Component {...pageProps} />
 		</>
 	);
