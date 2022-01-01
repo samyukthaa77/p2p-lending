@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/Script";
 import "../styles/styles.css";
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 
 				<meta
-					name="description"
+					name="deScription"
 					content="Tivo is a HTML landing page template built with Bootstrap to help you crate engaging presentations for SaaS apps and convert visitors into users."
 				/>
 				<meta name="author" content="Inovatik" />
@@ -29,14 +30,14 @@ function MyApp({ Component, pageProps }) {
 
 				<link rel="icon" href="images/favicon.png" />
 
-				<script src="js/jquery.min.js"></script>
-				<script src="js/popper.min.js"></script>
-				<script src="js/bootstrap.min.js"></script>
-				<script src="js/jquery.easing.min.js"></script>
-				<script src="js/swiper.min.js"></script>
-				<script src="js/jquery.magnific-popup.js"></script>
-				<script src="js/validator.min.js"></script>
-				<script src="js/scripts.js"></script>
+				<Script src="js/jquery.min.js"></Script>
+				<Script src="js/popper.min.js"></Script>
+				<Script src="js/bootstrap.min.js"></Script>
+				<Script src="js/jquery.easing.min.js"></Script>
+				<Script src="js/swiper.min.js"></Script>
+				<Script src="js/jquery.magnific-popup.js"></Script>
+				<Script src="js/validator.min.js"></Script>
+				<Script src="js/Scripts.js"></Script>
 			</Head>
 			<Component {...pageProps} />
 		</>
