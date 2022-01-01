@@ -195,7 +195,7 @@ export default function Home() {
 											value="Agreed-to-Terms"
 											required
 										/>
-										I agree with Tivo's{" "}
+										I agree with Tivos{" "}
 										<a href="privacy-policy.html">
 											Privacy Policy
 										</a>{" "}
