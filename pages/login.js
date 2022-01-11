@@ -8,65 +8,65 @@ const Login = () => {
 		<>
 			<Header />
 
-			<header id="header" class="ex-2-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
+			<header id="header" className="ex-2-header">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
 							<h1>Log In</h1>
 							<p>
 								You don't have a password? Then please{" "}
 								<Link href="/signup">
-									<a class="white">Sign Up</a>
+									<a className="white">Sign Up</a>
 								</Link>
 							</p>
-							<div class="form-container">
+							<div className="form-container">
 								<form
 									id="logInForm"
 									data-toggle="validator"
 									data-focus="false"
 								>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="email"
-											class="form-control-input"
+											className="form-control-input"
 											id="lemail"
 											required
 										/>
 										<label
-											class="label-control"
+											className="label-control"
 											for="lemail"
 										>
 											Email
 										</label>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="lpassword"
 											required
 										/>
 										<label
-											class="label-control"
+											className="label-control"
 											for="lpassword"
 										>
 											Password
 										</label>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<button
 											type="submit"
-											class="form-control-submit-button"
+											className="form-control-submit-button"
 										>
 											LOG IN
 										</button>
 									</div>
-									<div class="form-message">
+									<div className="form-message">
 										<div
 											id="lmsgSubmit"
-											class="h3 text-center hidden"
+											className="h3 text-center hidden"
 										></div>
 									</div>
 								</form>

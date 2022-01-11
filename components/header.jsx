@@ -5,24 +5,24 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<>
-			<div class="spinner-wrapper">
-				<div class="spinner">
-					<div class="bounce1"></div>
-					<div class="bounce2"></div>
-					<div class="bounce3"></div>
+			<div className="spinner-wrapper">
+				<div className="spinner">
+					<div className="bounce1"></div>
+					<div className="bounce2"></div>
+					<div className="bounce3"></div>
 				</div>
 			</div>
 
-			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-				<div class="container">
+			<nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+				<div className="container">
 					<Link href="/">
-						<a class="navbar-brand logo-image">
+						<a className="navbar-brand logo-image">
 							<img src="images/logo.svg" alt="alternative" />
 						</a>
 					</Link>
 
 					<button
-						class="navbar-toggler"
+						className="navbar-toggler"
 						type="button"
 						data-toggle="collapse"
 						data-target="#navbarsExampleDefault"
@@ -30,37 +30,45 @@ const Header = () => {
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-awesome fas fa-bars"></span>
-						<span class="navbar-toggler-awesome fas fa-times"></span>
+						<span className="navbar-toggler-awesome fas fa-bars"></span>
+						<span className="navbar-toggler-awesome fas fa-times"></span>
 					</button>
 
 					<div
-						class="collapse navbar-collapse"
+						className="collapse navbar-collapse"
 						id="navbarsExampleDefault"
 					>
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link page-scroll" href="#header">
-									HOME <span class="sr-only">(current)</span>
-								</a>
+						<ul className="navbar-nav ml-auto">
+							<li className="nav-item">
+								<Link href="/">
+									<a className="nav-link page-scroll">
+										HOME{" "}
+										<span className="sr-only">
+											(current)
+										</span>
+									</a>
+								</Link>
 							</li>
-							<li class="nav-item">
+							<li className="nav-item">
 								<a
-									class="nav-link page-scroll"
+									className="nav-link page-scroll"
 									href="#features"
 								>
 									FEATURES
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link page-scroll" href="#details">
+							<li className="nav-item">
+								<a
+									className="nav-link page-scroll"
+									href="#details"
+								>
 									DETAILS
 								</a>
 							</li>
 
-							<li class="nav-item dropdown">
+							<li className="nav-item dropdown">
 								<a
-									class="nav-link dropdown-toggle page-scroll"
+									className="nav-link dropdown-toggle page-scroll"
 									href="#video"
 									id="navbarDropdown"
 									role="button"
@@ -70,47 +78,50 @@ const Header = () => {
 									VIDEO
 								</a>
 								<div
-									class="dropdown-menu"
+									className="dropdown-menu"
 									aria-labelledby="navbarDropdown"
 								>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="article-details.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											ARTICLE DETAILS
 										</span>
 									</a>
-									<div class="dropdown-items-divide-hr"></div>
+									<div className="dropdown-items-divide-hr"></div>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="terms-conditions.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											TERMS CONDITIONS
 										</span>
 									</a>
-									<div class="dropdown-items-divide-hr"></div>
+									<div className="dropdown-items-divide-hr"></div>
 									<a
-										class="dropdown-item"
+										className="dropdown-item"
 										href="privacy-policy.html"
 									>
-										<span class="item-text">
+										<span className="item-text">
 											PRIVACY POLICY
 										</span>
 									</a>
 								</div>
 							</li>
 
-							<li class="nav-item">
-								<a class="nav-link page-scroll" href="#pricing">
+							<li className="nav-item">
+								<a
+									className="nav-link page-scroll"
+									href="#pricing"
+								>
 									PRICING
 								</a>
 							</li>
 						</ul>
-						<span class="nav-item">
+						<span className="nav-item">
 							<Link href="/login">
-								<a class="btn-outline-sm">LOG IN</a>
+								<a className="btn-outline-sm">LOG IN</a>
 							</Link>
 						</span>
 					</div>
