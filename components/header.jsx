@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-const Navbar = () => {
+const Header = () => {
 	return (
 		<>
 			<div class="spinner-wrapper">
@@ -37,26 +37,20 @@ const Navbar = () => {
 					>
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a
-									class="nav-link page-scroll"
-									href="index.html#header"
-								>
+								<a class="nav-link page-scroll" href="#header">
 									HOME <span class="sr-only">(current)</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a
 									class="nav-link page-scroll"
-									href="index.html#features"
+									href="#features"
 								>
 									FEATURES
 								</a>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link page-scroll"
-									href="index.html#details"
-								>
+								<a class="nav-link page-scroll" href="#details">
 									DETAILS
 								</a>
 							</li>
@@ -64,7 +58,7 @@ const Navbar = () => {
 							<li class="nav-item dropdown">
 								<a
 									class="nav-link dropdown-toggle page-scroll"
-									href="index.html#video"
+									href="#video"
 									id="navbarDropdown"
 									role="button"
 									aria-haspopup="true"
@@ -106,10 +100,7 @@ const Navbar = () => {
 							</li>
 
 							<li class="nav-item">
-								<a
-									class="nav-link page-scroll"
-									href="index.html#pricing"
-								>
+								<a class="nav-link page-scroll" href="#pricing">
 									PRICING
 								</a>
 							</li>
@@ -126,4 +117,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Header;
