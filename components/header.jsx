@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Header = () => {
 	return (
@@ -14,9 +15,11 @@ const Header = () => {
 
 			<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 				<div class="container">
-					<a class="navbar-brand logo-image" href="index.html">
-						<img src="images/logo.svg" alt="alternative" />
-					</a>
+					<Link href="/">
+						<a class="navbar-brand logo-image">
+							<img src="images/logo.svg" alt="alternative" />
+						</a>
+					</Link>
 
 					<button
 						class="navbar-toggler"
@@ -106,9 +109,9 @@ const Header = () => {
 							</li>
 						</ul>
 						<span class="nav-item">
-							<a class="btn-outline-sm" href="log-in.html">
-								LOG IN
-							</a>
+							<Link href="/login">
+								<a class="btn-outline-sm">LOG IN</a>
+							</Link>
 						</span>
 					</div>
 				</div>

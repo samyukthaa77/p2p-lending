@@ -4,6 +4,7 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
 import Header from "../components/header";
+import Link from "next/link";
 
 export default function Home() {
 	const [email, setEmail] = useState("");
@@ -36,9 +37,9 @@ export default function Home() {
 							<p>
 								Fill out the form below to sign up for Tivo.
 								Already signed up? Then just{" "}
-								<a className="white" href="../login">
-									Log In
-								</a>
+								<Link href="/login">
+									<a className="white">Log In</a>
+								</Link>
 							</p>
 							<div className="form-container">
 								<div className="form-group">

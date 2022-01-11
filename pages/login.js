@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
+import Link from "next/link";
 
 const Login = () => {
 	return (
@@ -14,9 +15,9 @@ const Login = () => {
 							<h1>Log In</h1>
 							<p>
 								You don't have a password? Then please{" "}
-								<a class="white" href="../">
-									Sign Up
-								</a>
+								<Link href="/signup">
+									<a class="white">Sign Up</a>
+								</Link>
 							</p>
 							<div class="form-container">
 								<form
