@@ -14,7 +14,7 @@ const Login = () => {
 						<div className="col-lg-12">
 							<h1>Log In</h1>
 							<p>
-								You don't have a password? Then please{" "}
+								{"You don't have a password? Then please"}
 								<Link href="/signup">
 									<a className="white">Sign Up</a>
 								</Link>
@@ -34,7 +34,7 @@ const Login = () => {
 										/>
 										<label
 											className="label-control"
-											for="lemail"
+											htmlFor="lemail"
 										>
 											Email
 										</label>
@@ -49,7 +49,7 @@ const Login = () => {
 										/>
 										<label
 											className="label-control"
-											for="lpassword"
+											htmlFor="lpassword"
 										>
 											Password
 										</label>

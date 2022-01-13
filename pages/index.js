@@ -145,9 +145,9 @@ const Home = () => {
 										Lists Builder
 									</h4>
 									<p>
-										It's very easy to start creating email
-										lists for your marketing actions. Just
-										create your Tivo account
+										{
+											"It's very easy to start creating email lists for your marketing actions. Just create your Tivo account"
+										}
 									</p>
 								</div>
 							</div>
@@ -285,9 +285,9 @@ const Home = () => {
 													Ever
 												</h3>
 												<p>
-													It's very easy to start
-													using Tivo. You just need to
-													fill out and submit the{" "}
+													{
+														"It's very easy to start using Tivo. You just need to fill out and submit the"
+													}
 													<a
 														className="blue page-scroll"
 														href="sign-up.html"
@@ -358,12 +358,9 @@ const Home = () => {
 													Campaigns Monitoring Tools
 												</h3>
 												<p>
-													Campaigns monitoring is a
-													feature we've developed
-													since the beginning because
-													it's at the core of Tivo and
-													basically to any marketing
-													activity focused on results.
+													{
+														"Campaigns monitoring is a feature we've developed since the beginning because it's at the core of Tivo and basically to any marketing activity focused on results."
+													}
 												</p>
 												<ul className="list-unstyled li-space-lg">
 													<li className="media">
@@ -423,13 +420,9 @@ const Home = () => {
 											<div className="text-container">
 												<h3>Analytics Control Panel</h3>
 												<p>
-													Analytics control panel is
-													important for every
-													marketing team so it's beed
-													implemented from the begging
-													and designed to produce
-													reports based on very little
-													input information.
+													{
+														"Analytics control panel is important for every marketing team so it's beed implemented from the begging and designed to produce reports based on very little input information."
+													}
 												</p>
 												<ul className="list-unstyled li-space-lg">
 													<li className="media">
