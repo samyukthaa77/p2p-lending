@@ -165,9 +165,9 @@ const Home = () => {
 										Campaign Tracker
 									</h4>
 									<p>
-										Campaigns is a feature we've developed
-										since the beginning because it's at the
-										core of Tivo's functionalities
+										{
+											"Campaigns is a feature we've developed since the beginning because it's at the core of Tivo's functionalities"
+										}
 									</p>
 								</div>
 							</div>
