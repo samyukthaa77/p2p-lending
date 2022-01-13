@@ -32,9 +32,9 @@ const Footer = () => {
 							<div className="footer-col first">
 								<h4>About Tivo</h4>
 								<p className="p-small">
-									We're passionate about designing and
-									developing one of the best marketing apps in
-									the market
+									{
+										"We're passionate about designing and developing one of the best marketing apps in the market"
+									}
 								</p>
 							</div>
 						</div>
