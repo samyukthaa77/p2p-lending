@@ -5,14 +5,6 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<>
-			<div className="spinner-wrapper">
-				<div className="spinner">
-					<div className="bounce1"></div>
-					<div className="bounce2"></div>
-					<div className="bounce3"></div>
-				</div>
-			</div>
-
 			<nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 				<div className="container">
 					<Link href="/">
