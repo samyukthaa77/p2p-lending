@@ -13,7 +13,7 @@ export default function Home() {
 
 	const signUp = async () => {
 		const { data } = await axios.post(
-			"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production",
+			"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production/p2p-api-resource",
 			{
 				method: "register",
 				email: email,
