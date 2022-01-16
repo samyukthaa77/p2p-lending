@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import Header from "../components/header";
 import Link from "next/link";
+import Router from "next/router";
+import md5 from "md5";
 import axios from "axios";
 
 const Login = () => {
@@ -14,11 +15,16 @@ const Login = () => {
 			{
 				method: "login",
 				email: email,
-				password: SHA256(password),
+				password: md5(password),
 			}
 		);
 
 		console.log(data);
+		if (data.status == "1") {
+			Router.push("/");
+		} else {
+			alert(data.message);
+		}
 	};
 
 	return (
@@ -37,11 +43,7 @@ const Login = () => {
 								</Link>
 							</p>
 							<div className="form-container">
-								<form
-									id="logInForm"
-									data-toggle="validator"
-									data-focus="false"
-								>
+								<div>
 									<div className="form-group">
 										<input
 											type="email"
@@ -95,7 +97,7 @@ const Login = () => {
 											className="h3 text-center hidden"
 										></div>
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>
