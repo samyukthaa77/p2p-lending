@@ -35,7 +35,6 @@ export default function Home() {
 						<div className="col-lg-12">
 							<h1>Sign Up</h1>
 							<p>
-								Fill out the form below to sign up for Tivo.
 								Already signed up? Then just{" "}
 								<Link href="/login">
 									<a className="white">Log In</a>
