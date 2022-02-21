@@ -10,6 +10,7 @@ export default function Home() {
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [password, setPassword] = useState("");
+	const [confirmpassword, setConfirmPassword] = useState('');
 
 	const signUp = async () => {
 		const { data } = await axios.post(
@@ -98,6 +99,25 @@ export default function Home() {
 									</label>
 									<div className="help-block with-errors"></div>
 								</div>
+								<div className="form-group">
+									<input
+										type="text"
+										className="form-control-input"
+										id="sconfirmpassword"
+										required
+										value={confirmpassword}
+										onChange={(e) =>
+											setConfirmPassword(e.target.value)
+										}
+									/>
+									<label
+										className="label-control"
+										htmlFor="sconfirmpassword"
+									>
+										Confirm password
+									</label>
+									<div className="help-block with-errors"></div>
+								</div>
 								<div className="form-group checkbox">
 									<input
 										type="checkbox"
@@ -105,13 +125,13 @@ export default function Home() {
 										value="Agreed-to-Terms"
 										required
 									/>
-									I agree with Tivos{" "}
+									I agree with the {" "}
 									<a href="privacy-policy.html">
 										Privacy Policy
 									</a>{" "}
 									and{" "}
 									<a href="terms-conditions.html">
-										Ter&apos;s Conditions
+										Term&apos;s Conditions
 									</a>
 									<div className="help-block with-errors"></div>
 								</div>
