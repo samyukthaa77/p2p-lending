@@ -64,7 +64,22 @@ const Kyc_lender = () => {
 										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group">
-									<label for="DOB">Date of birth:         </label>
+										<input
+											type="text"
+											class="form-control-input"
+											id="txtAge"
+											required
+										/>
+										<label
+											class="label-control"
+											for="nAge"
+										>
+											Age
+										</label>
+										<div class="help-block with-errors"></div>
+									</div>
+									<div class="form-group">
+									<label for="DOB" style={{marginRight:30}}>Date of birth:{""} </label>
                                     <input type="date" id="DOB" name="DOB"></input>
 									</div>
 									<div class="form-group checkbox">
@@ -89,7 +104,7 @@ const Kyc_lender = () => {
 											type="submit"
 											class="form-control-submit-button"
 										>
-											Update Profile
+											SUBMIT
 										</button>
 									</div>
 									<div class="form-message">
@@ -99,42 +114,6 @@ const Kyc_lender = () => {
 										></div>
 									</div>
 								</form>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="icon-container">
-								<span class="fa-stack">
-									<a href="#your-link">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-facebook-f fa-stack-1x"></i>
-									</a>
-								</span>
-								<span class="fa-stack">
-									<a href="#your-link">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-twitter fa-stack-1x"></i>
-									</a>
-								</span>
-								<span class="fa-stack">
-									<a href="#your-link">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-pinterest-p fa-stack-1x"></i>
-									</a>
-								</span>
-								<span class="fa-stack">
-									<a href="#your-link">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-instagram fa-stack-1x"></i>
-									</a>
-								</span>
-								<span class="fa-stack">
-									<a href="#your-link">
-										<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-linkedin-in fa-stack-1x"></i>
-									</a>
-								</span>
 							</div>
 						</div>
 					</div>
