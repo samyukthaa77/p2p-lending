@@ -10,7 +10,7 @@ export default function Home() {
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [password, setPassword] = useState("");
-	const [confirmpassword, setConfirmPassword] = useState('');
+	const [confirmpassword, setConfirmPassword] = useState("");
 
 	const signUp = async () => {
 		const { data } = await axios.post(
@@ -37,14 +37,15 @@ export default function Home() {
 							<h1>Sign Up</h1>
 							<p>
 								Already a user? Then {" "}
-								<Link href="/login">
+								<Link href="/main_login">
 									<a className="white">Log In</a>
 								</Link>
 							</p>
 							<div className="form-container">
-								<div className="form-group">
+								<div style={{ marginBottom: 22 }}>
 									<input
 										type="email"
+										placeholder="Email"
 										className="form-control-input"
 										id="semail"
 										required
@@ -53,17 +54,12 @@ export default function Home() {
 											setEmail(e.target.value)
 										}
 									/>
-									<label
-										className="label-control"
-										htmlFor="semail"
-									>
-										Email
-									</label>
 									<div className="help-block with-errors"></div>
 								</div>
-								<div className="form-group">
+								<div style={{ marginBottom: 22 }}>
 									<input
 										type="text"
+										placeholder="Name"
 										className="form-control-input"
 										id="sname"
 										required
@@ -72,17 +68,12 @@ export default function Home() {
 											setName(e.target.value)
 										}
 									/>
-									<label
-										className="label-control"
-										htmlFor="sname"
-									>
-										Name
-									</label>
 									<div className="help-block with-errors"></div>
 								</div>
-								<div className="form-group">
+								<div style={{ marginBottom: 22 }}>
 									<input
 										type="text"
+										placeholder="Password"
 										className="form-control-input"
 										id="spassword"
 										required
@@ -91,17 +82,12 @@ export default function Home() {
 											setPassword(e.target.value)
 										}
 									/>
-									<label
-										className="label-control"
-										htmlFor="spassword"
-									>
-										Password
-									</label>
 									<div className="help-block with-errors"></div>
 								</div>
-								<div className="form-group">
+								<div style={{ marginBottom: 22 }}>
 									<input
 										type="text"
+										placeholder="Confirm Password"
 										className="form-control-input"
 										id="sconfirmpassword"
 										required
@@ -110,12 +96,6 @@ export default function Home() {
 											setConfirmPassword(e.target.value)
 										}
 									/>
-									<label
-										className="label-control"
-										htmlFor="sconfirmpassword"
-									>
-										Confirm password
-									</label>
 									<div className="help-block with-errors"></div>
 								</div>
 								<div className="form-group checkbox">
@@ -125,7 +105,7 @@ export default function Home() {
 										value="Agreed-to-Terms"
 										required
 									/>
-									I agree with the {" "}
+									I agree with the{" "}
 									<a href="privacy-policy.html">
 										Privacy Policy
 									</a>{" "}

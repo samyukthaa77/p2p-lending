@@ -112,7 +112,7 @@ const Header = () => {
 							</li>
 						</ul>
 						<span className="nav-item">
-							<Link href="/login">
+							<Link href="/main_login">
 								<a className="btn-outline-sm">LOG IN</a>
 							</Link>
 						</span>
