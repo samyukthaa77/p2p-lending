@@ -9,7 +9,7 @@ const Header = () => {
 				<div className="container">
 					<Link href="/">
 						<a className="navbar-brand logo-image">
-							<img src="images/logo.svg" alt="alternative" />
+							<img src="images/credere.png" alt="alternative"  />
 						</a>
 					</Link>
 

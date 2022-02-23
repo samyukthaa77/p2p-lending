@@ -36,7 +36,7 @@ export default function Home() {
 						<div className="col-lg-12">
 							<h1>Sign Up</h1>
 							<p>
-								Already signed up? Then just{" "}
+								Already a user? Then {" "}
 								<Link href="/login">
 									<a className="white">Log In</a>
 								</Link>
