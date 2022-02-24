@@ -86,7 +86,7 @@ const Login = () => {
 										<button
 											type="submit"
 											className="form-control-submit-button"
-											onClick={"document.location='KYC-borrower.js'"}
+											onClick={login}
 										>
 											LOG IN
 										</button>

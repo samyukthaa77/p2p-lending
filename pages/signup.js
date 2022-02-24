@@ -3,10 +3,12 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import axios from "axios";
+import md5 from "md5";
 import Header from "../components/header";
 import Link from "next/link";
+import Router from "next/router";
 
-export default function Home() {
+export default function Signup() {
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [password, setPassword] = useState("");
@@ -19,11 +21,16 @@ export default function Home() {
 				method: "register",
 				email: email,
 				name: name,
-				password: password,
+				password: md5(password),
 			}
 		);
 
 		console.log(data);
+		if (data.code == "1") {
+			Router.push("/login");
+		} else {
+			alert(data.message);
+		}
 	};
 
 	return (
