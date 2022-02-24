@@ -15,7 +15,7 @@ const LoginCompleted = () => {
               <h1>Log In</h1>
               <p>
                 You don&apos;t have a password? Then please{" "}
-                <a className="white" href="/signupgit ">
+                <a className="white" href="/signup ">
                   Sign Up
                 </a>
               </p>

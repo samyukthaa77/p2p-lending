@@ -8,10 +8,14 @@ const Header = () => {
 			<nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 				<div className="container">
 					<Link href="/">
-						<a className="navbar-brand logo-image">
-							<img src="images/credere.png" alt="alternative"  />
-						</a>
-					</Link>
+            			<a className="navbar-brand logo-image">
+              				<img
+                				src="images/credere.PNG"
+                				alt="alternative"
+                				style={{ width: 200, height: 100, objectFit: "contain" }}
+              				/>
+            			</a>
+          			</Link>
 
 					<button
 						className="navbar-toggler"

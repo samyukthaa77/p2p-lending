@@ -37,7 +37,7 @@ const Home = () => {
 									<div className="img-wrapper">
 										<img
 											className="img-fluid"
-											src="images/header-software-app.png"
+											src="images/p2plending.png"
 											alt="alternative"
 										/>
 									</div>

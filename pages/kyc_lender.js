@@ -89,7 +89,7 @@ const Kyc_lender = () => {
 											value="Agreed-to-Terms"
 											required
 										/>
-										I've read and agree to 
+										I've read and agree to Credere's
 										<a href="privacy-policy.html">
 											Privacy Policy
 										</a>

@@ -181,7 +181,7 @@ const Kyc_borrower = () => {
 											value="Agreed-to-Terms"
 											required
 										/>
-										I've read and agree to Tivo's written
+										I've read and agree to Credere's written
 										<a href="privacy-policy.html">
 											Privacy Policy
 										</a>
