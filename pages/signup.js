@@ -1,7 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
 import axios from "axios";
 import md5 from "md5";
 import Header from "../components/header";
@@ -13,6 +10,7 @@ export default function Signup() {
 	const [name, setName] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmpassword, setConfirmPassword] = useState("");
+	const [selectedTab, setSelectedTab] = useState("lender");
 
 	const signUp = async () => {
 		const { data } = await axios.post(
@@ -37,107 +35,204 @@ export default function Signup() {
 		<>
 			<Header />
 
-			<header id="header" className="ex-2-header">
+			<header className="ex-2-header header">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
 							<h1>Sign Up</h1>
 							<p>
-								Already signed up? Then just{" "}
-								<Link href="/login">
+								Already a user? Then{" "}
+								<Link href="/main_login">
 									<a className="white">Log In</a>
 								</Link>
 							</p>
-							<div className="form-container">
-								<div style={{ marginBottom: 22 }}>
-									<input
-										type="email"
-										placeholder="Email"
-										className="form-control-input"
-										id="semail"
-										required
-										value={email}
-										onChange={(e) =>
-											setEmail(e.target.value)
-										}
-									/>
-									<div className="help-block with-errors"></div>
-								</div>
-								<div style={{ marginBottom: 22 }}>
-									<input
-										type="text"
-										placeholder="Name"
-										className="form-control-input"
-										id="sname"
-										required
-										value={name}
-										onChange={(e) =>
-											setName(e.target.value)
-										}
-									/>
-									<div className="help-block with-errors"></div>
-								</div>
-								<div style={{ marginBottom: 22 }}>
-									<input
-										type="text"
-										placeholder="Password"
-										className="form-control-input"
-										id="spassword"
-										required
-										value={password}
-										onChange={(e) =>
-											setPassword(e.target.value)
-										}
-									/>
-									<div className="help-block with-errors"></div>
-								</div>
-								<div style={{ marginBottom: 22 }}>
-									<input
-										type="text"
-										placeholder="Confirm Password"
-										className="form-control-input"
-										id="sconfirmpassword"
-										required
-										value={confirmpassword}
-										onChange={(e) =>
-											setConfirmPassword(e.target.value)
-										}
-									/>
-									<div className="help-block with-errors"></div>
-								</div>
-								<div className="form-group checkbox">
-									<input
-										type="checkbox"
-										id="sterms"
-										value="Agreed-to-Terms"
-										required
-									/>
-									I agree with the{" "}
-									<a href="privacy-policy.html">
-										Privacy Policy
-									</a>{" "}
-									and{" "}
-									<a href="terms-conditions.html">
-										Term&apos;s Conditions
-									</a>
-									<div className="help-block with-errors"></div>
-								</div>
-								<div className="form-group">
-									<button
-										type="submit"
-										className="form-control-submit-button"
-										onClick={signUp}
-									>
-										SIGN UP
-									</button>
-								</div>
-								<div className="form-message">
-									<div
-										id="smsgSubmit"
-										className="h3 text-center hidden"
-									></div>
-								</div>
+							<div
+								style={{
+									marginBottom: 20,
+									margin: "20px auto",
+								}}
+							>
+								<button
+									className="btn-solid-lg page-scroll"
+									onClick={() => setSelectedTab("lender")}
+								>
+									LENDER
+								</button>
+								<button
+									className="btn-solid-lg page-scroll"
+									onClick={() => setSelectedTab("borrower")}
+									style={{ marginLeft: 20 }}
+								>
+									BORROWER
+								</button>
 							</div>
+							{selectedTab === "lender" ? (
+								<div className="form-container">
+									<form
+										id="logInForm"
+										data-toggle="validator"
+										data-focus="false"
+									>
+										<div className="form-group">
+											<input
+												type="email"
+												className="form-control-input"
+												id="lemail"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lemail"
+											>
+												Lender Email
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lname"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lname"
+											>
+												Lender Name
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lpassword"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lpassword"
+											>
+												Lender Password
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lconfirmpassword"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lconfirmpassword"
+											>
+												Lender Confirm Password
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<button
+												type="submit"
+												className="form-control-submit-button"
+											>
+												SIGN UP
+											</button>
+										</div>
+										<div className="form-message">
+											<div
+												id="lmsgSubmit"
+												className="h3 text-center hidden"
+											></div>
+										</div>
+									</form>
+								</div>
+							) : (
+								<div className="form-container">
+									<form
+										id="logInForm"
+										data-toggle="validator"
+										data-focus="false"
+									>
+										<div className="form-group">
+											<input
+												type="email"
+												className="form-control-input"
+												id="lemail"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lemail"
+											>
+												Borrower Email
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lname"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lname"
+											>
+												Borrower Name
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lpassword"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lpassword"
+											>
+												Borrower Password
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<input
+												type="text"
+												className="form-control-input"
+												id="lconfirmpassword"
+												required
+											/>
+											<label
+												className="label-control"
+												htmlFor="lconfirmpassword"
+											>
+												Borrower Confirm Password
+											</label>
+											<div className="help-block with-errors"></div>
+										</div>
+										<div className="form-group">
+											<button
+												type="submit"
+												className="form-control-submit-button"
+											>
+												SIGN UP
+											</button>
+										</div>
+										<div className="form-message">
+											<div
+												id="lmsgSubmit"
+												className="h3 text-center hidden"
+											></div>
+										</div>
+									</form>
+								</div>
+							)}
 						</div>
 					</div>
 				</div>

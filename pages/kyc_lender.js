@@ -142,7 +142,7 @@ const Kyc_lender = () => {
 											value="Agreed-to-Terms"
 											required
 										/>
-										I've read and agree to
+										I've read and agree to Credere's
 										<a href="privacy-policy.html">
 											Privacy Policy
 										</a>
@@ -158,7 +158,7 @@ const Kyc_lender = () => {
 											className="form-control-submit-button"
 											onClick={kyc_lender}
 										>
-											Update Profile
+											SUBMIT
 										</button>
 									</div>
 									<div className="form-message">
