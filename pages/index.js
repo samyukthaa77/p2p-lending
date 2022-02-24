@@ -64,71 +64,13 @@ const Home = () => {
 				/>
 			</svg>
 
-			<div className="slider-1">
-				<div className="container">
-					<div className="row">
-						<div className="col-lg-12">
-							<div className="slider-container">
-								<div className="swiper-container image-slider">
-									<div className="swiper-wrapper">
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-1.png"
-												alt="alternative"
-											/>
-										</div>
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-2.png"
-												alt="alternative"
-											/>
-										</div>
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-3.png"
-												alt="alternative"
-											/>
-										</div>
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-4.png"
-												alt="alternative"
-											/>
-										</div>
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-5.png"
-												alt="alternative"
-											/>
-										</div>
-										<div className="swiper-slide">
-											<img
-												className="img-fluid"
-												src="images/customer-logo-6.png"
-												alt="alternative"
-											/>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 			<div className="cards-1">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
-							<div className="above-heading">DESCRIPTION</div>
+							<div className="above-heading">WHAT IS</div>
 							<h2 className="h2-heading">
-								Marketing Automation Will Bring More Qualified
-								Leads
+								Peer To Peer Lending?	
 							</h2>
 						</div>
 					</div>
@@ -138,17 +80,17 @@ const Home = () => {
 								<div className="card-image">
 									<img
 										className="img-fluid"
-										src="images/description-1.png"
+										src="images/description-1.svg"
 										alt="alternative"
 									/>
 								</div>
 								<div className="card-body">
 									<h4 className="card-title">
-										Lists Builder
+										Alternate Financing Model
 									</h4>
 									<p>
 										{
-											"It's very easy to start creating email lists for your marketing actions. Just create your Tivo account"
+											"It is a financial innovation which connects verified borrowers seeking loans with investors looking to earn higher returns on their investments.Investors have the option to lend small amounts to multiple borrowers to diversify their investments."
 										}
 									</p>
 								</div>
@@ -158,17 +100,17 @@ const Home = () => {
 								<div className="card-image">
 									<img
 										className="img-fluid"
-										src="images/description-2.png"
+										src="images/description2.svg"
 										alt="alternative"
 									/>
 								</div>
 								<div className="card-body">
 									<h4 className="card-title">
-										Campaign Tracker
+										Quick Hasel Free
 									</h4>
 									<p>
 										{
-											"Campaigns is a feature we've developed since the beginning because it's at the core of Tivo's functionalities"
+											"It provides a seamless user experience in terms of ease of transaction, ability to view detailed account statements, transaction analysis, and many more features"
 										}
 									</p>
 								</div>
@@ -178,18 +120,17 @@ const Home = () => {
 								<div className="card-image">
 									<img
 										className="img-fluid"
-										src="images/description-3.png"
+										src="images/description-3.svg"
 										alt="alternative"
 									/>
 								</div>
 								<div className="card-body">
 									<h4 className="card-title">
-										Analytics Tool
+										Transparent & Secure
 									</h4>
 									<p>
-										Tivo collects customer data in order to
-										help you analyse different situations
-										and take required action
+									 The platform puts in place one of the highest data security and safety standards to keep your data protected and confidential at all times.
+									 RBI has already taken a cognizance of this innovation and come up with regulations for the sector.
 									</p>
 								</div>
 							</div>
@@ -203,12 +144,9 @@ const Home = () => {
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="above-heading">FEATURES</div>
-							<h2 className="h2-heading">Marketing Automation</h2>
+							<h2 className="h2-heading">Why Credere ?</h2>
 							<p className="p-heading">
-								Take your business strategy to the next level
-								and automatize your marketing tasks to save time
-								for product development. Tivo can provide
-								results in less than 2 weeks
+							Get P2P Loans at Attractive Interest Rates on Peer to Peer Lending Platform without any Prepayment Charges
 							</p>
 						</div>
 					</div>
@@ -229,8 +167,8 @@ const Home = () => {
 										aria-controls="tab-1"
 										aria-selected="true"
 									>
-										<i className="fas fa-list"></i>List
-										Builder
+										<i className="fas fa-list"></i>Borrower
+										Benefits
 									</a>
 								</li>
 								<li className="nav-item">
@@ -244,7 +182,7 @@ const Home = () => {
 										aria-selected="false"
 									>
 										<i className="fas fa-envelope-open-text"></i>
-										Campaigns
+										Lender Benefits
 									</a>
 								</li>
 								<li className="nav-item">
@@ -258,7 +196,7 @@ const Home = () => {
 										aria-selected="false"
 									>
 										<i className="fas fa-chart-bar"></i>
-										Analytics
+										Salient Features
 									</a>
 								</li>
 							</ul>
@@ -275,7 +213,7 @@ const Home = () => {
 											<div className="image-container">
 												<img
 													className="img-fluid"
-													src="images/features-1.png"
+													src="images/features-1.svg"
 													alt="alternative"
 												/>
 											</div>
@@ -283,55 +221,38 @@ const Home = () => {
 										<div className="col-lg-6">
 											<div className="text-container">
 												<h3>
-													List Building Is Easier Than
-													Ever
+													Why Borrow at Credere ?
 												</h3>
-												<p>
-													{
-														"It's very easy to start using Tivo. You just need to fill out and submit the"
-													}
-													<a
-														className="blue page-scroll"
-														href="sign-up.html"
-													>
-														Sign Up Form
-													</a>{" "}
-													and you will receive access
-													to the app and all of its
-													features in no more than
-													24h.
-												</p>
+												
 												<ul className="list-unstyled li-space-lg">
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Create and embed on
-															websites newsletter
-															sign up forms
+														Borrowers can get P2P loans at attractive interest rates 
+														and assess their profile based on 40+ parameters 
+														using credit score model.
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Manage forms and
-															landing pages for
-															your services
+														The Borrowers can simply prepay their loans at their own 
+														convenience without any charges whatsoever 
+														and as many times as they wish.
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Add and remove
-															subscribers using
-															the control panel
+															Borrowers gain help from guarantors for repaying the money in the worst case scenarios.
 														</div>
 													</li>
 												</ul>
 												<a
 													className="btn-solid-reg popup-with-move-anim"
-													href="#details-lightbox-1"
+													href="/signup"
 												>
-													LIGHTBOX
+													SIGN UP
 												</a>
 											</div>
 										</div>
@@ -349,7 +270,7 @@ const Home = () => {
 											<div className="image-container">
 												<img
 													className="img-fluid"
-													src="images/features-2.png"
+													src="images/features-2.svg"
 													alt="alternative"
 												/>
 											</div>
@@ -357,45 +278,36 @@ const Home = () => {
 										<div className="col-lg-6">
 											<div className="text-container">
 												<h3>
-													Campaigns Monitoring Tools
+													Why Invest at Credere?
 												</h3>
-												<p>
-													{
-														"Campaigns monitoring is a feature we've developed since the beginning because it's at the core of Tivo and basically to any marketing activity focused on results."
-													}
-												</p>
+												
 												<ul className="list-unstyled li-space-lg">
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Easily plan
-															campaigns and
-															schedule their
-															starting date
+														It provides investors an opportunity to invest as
+														 per their preference.
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Start campaigns and
-															follow their
-															evolution closely
+															A lookthrough of various verified borrower's profile
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Evaluate campaign
-															results and optimize
-															future actions
+														A provision of legal recovery support for all loans lent on our platform. 
+														We have a well-defined process in place to ensure a hassle-free experience for investors.
 														</div>
 													</li>
 												</ul>
 												<a
 													className="btn-solid-reg popup-with-move-anim"
-													href="#details-lightbox-2"
+													href="/signup"
 												>
-													LIGHTBOX
+													SIGN UP
 												</a>
 											</div>
 										</div>
@@ -413,52 +325,40 @@ const Home = () => {
 											<div className="image-container">
 												<img
 													className="img-fluid"
-													src="images/features-3.png"
+													src="images/features-3.svg"
 													alt="alternative"
 												/>
 											</div>
 										</div>
 										<div className="col-lg-6">
 											<div className="text-container">
-												<h3>Analytics Control Panel</h3>
-												<p>
-													{
-														"Analytics control panel is important for every marketing team so it's beed implemented from the begging and designed to produce reports based on very little input information."
-													}
-												</p>
+												<h3>Uniqueness </h3>
+											
 												<ul className="list-unstyled li-space-lg">
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															If you set it up
-															correctly you will
-															get acces to great
-															intel
+															Support from Guarantors
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															Easy to integrate in
-															your websites and
-															landing pages
+															Automatic Disbursal of required money for different investments
 														</div>
 													</li>
 													<li className="media">
 														<i className="fas fa-square"></i>
 														<div className="media-body">
-															The generated
-															reports are
-															important for your
-															strategy
+															Loans at attractive interest rates
 														</div>
 													</li>
 												</ul>
 												<a
 													className="btn-solid-reg popup-with-move-anim"
-													href="#details-lightbox-3"
+													href="/signup"
 												>
-													LIGHTBOX
+													SIGN UP
 												</a>
 											</div>
 										</div>
@@ -471,6 +371,15 @@ const Home = () => {
 			</div>
 
 			<Footer />
+
+    		<script src="js/jquery.min.js"></script> 
+    		<script src="js/popper.min.js"></script> 
+    		<script src="js/bootstrap.min.js"></script> 
+    		<script src="js/jquery.easing.min.js"></script>
+    		<script src="js/swiper.min.js"></script> 
+    		<script src="js/jquery.magnific-popup.js"></script>
+    		<script src="js/validator.min.js"></script>
+    		<script src="js/scripts.js"></script>
 		</>
 	);
 };
