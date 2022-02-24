@@ -1,41 +1,25 @@
-import { useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+
 import Header from "../components/header";
-import Link from "next/link";
 
-export default function Home() {
-	const [selectedTab, setSelectedTab] = useState("lender");
+const LoginCompleted = () => {
+  const [selectedTab, setSelectedTab] = useState("lender");
 
-	const signUp = async () => {
-		const { data } = await axios.post(
-			"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production/p2p-api-resource",
-			{
-				method: "register",
-				email: email,
-				name: text,
-				password: password,
-			}
-		);
-
-		console.log(data);
-	};
-
-	return (
-		<>
-			<Header />
-
-			<header className="ex-2-header header">
-				<div className="container">
-					<div className="row">
-						<div className="col-lg-12">
-							<h1>Sign Up</h1>
-							<p>
-								Already a user? Then {" "}
-								<Link href="/main_login">
-									<a className="white">Log In</a>
-								</Link>
-							</p>
-							<div style={{ marginBottom: 20, margin: "20px auto" }}>
+  return (
+    <div>
+      <Header />
+      <div className="ex-2-header header">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h1>Log In</h1>
+              <p>
+                You don&apos;t have a password? Then please{" "}
+                <a className="white" href="/signupgit ">
+                  Sign Up
+                </a>
+              </p>
+              <div style={{ marginBottom: 20, margin: "20px auto" }}>
                 <button
                   className="btn-solid-lg page-scroll"
                   onClick={() => setSelectedTab("lender")}
@@ -51,7 +35,7 @@ export default function Home() {
                 </button>
               </div>
               {selectedTab === "lender" ? (
-              
+                // Lender Tab
                 <div className="form-container">
                   <form
                     id="logInForm"
@@ -70,18 +54,6 @@ export default function Home() {
                       </label>
                       <div className="help-block with-errors"></div>
                     </div>
-					<div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control-input"
-                        id="lname"
-                        required
-                      />
-                      <label className="label-control" htmlFor="lname">
-                        Lender Name
-                      </label>
-                      <div className="help-block with-errors"></div>
-                    </div>
                     <div className="form-group">
                       <input
                         type="text"
@@ -94,24 +66,12 @@ export default function Home() {
                       </label>
                       <div className="help-block with-errors"></div>
                     </div>
-					<div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control-input"
-                        id="lconfirmpassword"
-                        required
-                      />
-                      <label className="label-control" htmlFor="lconfirmpassword">
-                        Lender Confirm Password
-                      </label>
-                      <div className="help-block with-errors"></div>
-                    </div>
                     <div className="form-group">
                       <button
                         type="submit"
                         className="form-control-submit-button"
                       >
-                        SIGN UP
+                        LOG IN
                       </button>
                     </div>
                     <div className="form-message">
@@ -123,7 +83,7 @@ export default function Home() {
                   </form>
                 </div>
               ) : (
-              
+                // Borrower Tab
                 <div className="form-container">
                   <form
                     id="logInForm"
@@ -142,18 +102,6 @@ export default function Home() {
                       </label>
                       <div className="help-block with-errors"></div>
                     </div>
-					<div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control-input"
-                        id="lname"
-                        required
-                      />
-                      <label className="label-control" htmlFor="lname">
-                        Borrower Name
-                      </label>
-                      <div className="help-block with-errors"></div>
-                    </div>
                     <div className="form-group">
                       <input
                         type="text"
@@ -166,24 +114,12 @@ export default function Home() {
                       </label>
                       <div className="help-block with-errors"></div>
                     </div>
-					<div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control-input"
-                        id="lconfirmpassword"
-                        required
-                      />
-                      <label className="label-control" htmlFor="lconfirmpassword">
-                        Borrower Confirm Password
-                      </label>
-                      <div className="help-block with-errors"></div>
-                    </div>
                     <div className="form-group">
                       <button
                         type="submit"
                         className="form-control-submit-button"
                       >
-                        SIGN UP
+                        LOG IN
                       </button>
                     </div>
                     <div className="form-message">
@@ -195,10 +131,12 @@ export default function Home() {
                   </form>
                 </div>
               )}
-						</div>
-					</div>
-				</div>
-			</header>
-		</>
-	);
-}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LoginCompleted;

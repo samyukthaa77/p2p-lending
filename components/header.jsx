@@ -9,7 +9,7 @@ const Header = () => {
 				<div className="container">
 					<Link href="/">
 						<a className="navbar-brand logo-image">
-							<img src="images/logo.svg" alt="alternative" />
+							<img src="images/credere.png" alt="alternative"  />
 						</a>
 					</Link>
 
@@ -112,7 +112,7 @@ const Header = () => {
 							</li>
 						</ul>
 						<span className="nav-item">
-							<Link href="/login">
+							<Link href="/main_login">
 								<a className="btn-outline-sm">LOG IN</a>
 							</Link>
 						</span>

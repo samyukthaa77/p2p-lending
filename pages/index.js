@@ -16,15 +16,17 @@ const Home = () => {
 						<div className="row">
 							<div className="col-lg-6 col-xl-5">
 								<div className="text-container">
-									<h1>SaaS App HTML Landing Page</h1>
+									<h1>Smarter & Better Investment Asset Class</h1>
 									<p className="p-large">
-										Use Tivo to automate your marketing
-										actions in order to reach a much larger
-										audience
+									Get online personal loans at attractive interest rates
+									through P2P Lending
+									</p>
+									<p className="p-large">
+									Opportunity to earn high returns by lending money online to verified borrowers
 									</p>
 									<a
 										className="btn-solid-lg page-scroll"
-										href="sign-up.html"
+										href="/signup"
 									>
 										SIGN UP
 									</a>
