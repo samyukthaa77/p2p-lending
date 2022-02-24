@@ -1,4 +1,7 @@
+import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
+import styles from "../styles/Home.module.css";
 import axios from "axios";
 import md5 from "md5";
 import Header from "../components/header";
@@ -20,6 +23,7 @@ export default function Signup() {
 				email: email,
 				name: name,
 				password: md5(password),
+				type: selectedTab,
 			}
 		);
 
@@ -39,7 +43,7 @@ export default function Signup() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
-							<h1>Sign Up</h1>
+							<h1 style={{ fontSize: 40 }}>Sign Up</h1>
 							<p>
 								Already a user? Then{" "}
 								<Link href="/main_login">
@@ -68,7 +72,7 @@ export default function Signup() {
 							</div>
 							{selectedTab === "lender" ? (
 								<div className="form-container">
-									<form
+									<div
 										id="logInForm"
 										data-toggle="validator"
 										data-focus="false"
@@ -79,13 +83,12 @@ export default function Signup() {
 												className="form-control-input"
 												id="lemail"
 												required
+												placeholder="Lender Email"
+												value={email}
+												onChange={(e) =>
+													setEmail(e.target.value)
+												}
 											/>
-											<label
-												className="label-control"
-												htmlFor="lemail"
-											>
-												Lender Email
-											</label>
 											<div className="help-block with-errors"></div>
 										</div>
 										<div className="form-group">
@@ -94,13 +97,12 @@ export default function Signup() {
 												className="form-control-input"
 												id="lname"
 												required
+												placeholder="Lender Name"
+												value={name}
+												onChange={(e) =>
+													setName(e.target.value)
+												}
 											/>
-											<label
-												className="label-control"
-												htmlFor="lname"
-											>
-												Lender Name
-											</label>
 											<div className="help-block with-errors"></div>
 										</div>
 										<div className="form-group">
@@ -109,13 +111,12 @@ export default function Signup() {
 												className="form-control-input"
 												id="lpassword"
 												required
+												placeholder="Lender Password"
+												value={password}
+												onChange={(e) =>
+													setPassword(e.target.value)
+												}
 											/>
-											<label
-												className="label-control"
-												htmlFor="lpassword"
-											>
-												Lender Password
-											</label>
 											<div className="help-block with-errors"></div>
 										</div>
 										<div className="form-group">
@@ -124,19 +125,21 @@ export default function Signup() {
 												className="form-control-input"
 												id="lconfirmpassword"
 												required
+												placeholder="Lender Confirm Password"
+												value={confirmpassword}
+												onChange={(e) =>
+													setConfirmPassword(
+														e.target.value
+													)
+												}
 											/>
-											<label
-												className="label-control"
-												htmlFor="lconfirmpassword"
-											>
-												Lender Confirm Password
-											</label>
 											<div className="help-block with-errors"></div>
 										</div>
 										<div className="form-group">
 											<button
 												type="submit"
 												className="form-control-submit-button"
+												onClick={signUp}
 											>
 												SIGN UP
 											</button>
@@ -147,11 +150,11 @@ export default function Signup() {
 												className="h3 text-center hidden"
 											></div>
 										</div>
-									</form>
+									</div>
 								</div>
 							) : (
 								<div className="form-container">
-									<form
+									<div
 										id="logInForm"
 										data-toggle="validator"
 										data-focus="false"
@@ -162,6 +165,10 @@ export default function Signup() {
 												className="form-control-input"
 												id="lemail"
 												required
+												value={email}
+												onChange={(e) =>
+													setEmail(e.target.value)
+												}
 											/>
 											<label
 												className="label-control"
@@ -177,6 +184,10 @@ export default function Signup() {
 												className="form-control-input"
 												id="lname"
 												required
+												value={name}
+												onChange={(e) =>
+													setName(e.target.value)
+												}
 											/>
 											<label
 												className="label-control"
@@ -192,6 +203,10 @@ export default function Signup() {
 												className="form-control-input"
 												id="lpassword"
 												required
+												value={password}
+												onChange={(e) =>
+													setPassword(e.target.value)
+												}
 											/>
 											<label
 												className="label-control"
@@ -207,6 +222,12 @@ export default function Signup() {
 												className="form-control-input"
 												id="lconfirmpassword"
 												required
+												value={confirmpassword}
+												onChange={(e) =>
+													setConfirmPassword(
+														e.target.value
+													)
+												}
 											/>
 											<label
 												className="label-control"
@@ -220,6 +241,7 @@ export default function Signup() {
 											<button
 												type="submit"
 												className="form-control-submit-button"
+												onClick={signUp}
 											>
 												SIGN UP
 											</button>
@@ -230,7 +252,7 @@ export default function Signup() {
 												className="h3 text-center hidden"
 											></div>
 										</div>
-									</form>
+									</div>
 								</div>
 							)}
 						</div>
