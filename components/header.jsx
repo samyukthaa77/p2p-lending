@@ -68,8 +68,6 @@ const Header = () => {
 
 							<li className="nav-item dropdown">
 								<a
-									className="nav-link dropdown-toggle page-scroll"
-									href="#video"
 									id="navbarDropdown"
 									role="button"
 									aria-haspopup="true"
@@ -83,7 +81,7 @@ const Header = () => {
 								>
 									<a
 										className="dropdown-item"
-										href="article-details.html"
+										href="/loan_calculator"
 									>
 										<span className="item-text">
 											LOAN CALCULATOR
