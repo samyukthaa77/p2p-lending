@@ -48,17 +48,12 @@ const Kyc_lender = () => {
 											className="form-control-input"
 											id="txtPANCard"
 											required
+											placeholder="User ID"
 											value={id}
 											onChange={(e) =>
 												setId(e.target.value)
 											}
 										/>
-										<label
-											className="label-control"
-											htmlFor="nPAN"
-										>
-											User ID
-										</label>
 										<div className="help-block with-errors"></div>
 									</div>
 									<div className="form-group">
@@ -67,17 +62,12 @@ const Kyc_lender = () => {
 											className="form-control-input"
 											id="txtPANCard"
 											required
+											placeholder="Permanent Account Number"
 											value={pan}
 											onChange={(e) =>
 												setPan(e.target.value)
 											}
 										/>
-										<label
-											className="label-control"
-											htmlFor="nPAN"
-										>
-											Permanent Account Number
-										</label>
 										<div className="help-block with-errors"></div>
 									</div>
 									<div className="form-group">
@@ -86,17 +76,12 @@ const Kyc_lender = () => {
 											className="form-control-input"
 											id="txtAadhaarnumber"
 											required
+											placeholder="Aadhar number"
 											value={aadhar}
 											onChange={(e) =>
 												setAadhar(e.target.value)
 											}
 										/>
-										<label
-											className="label-control"
-											htmlFor="nAadhaarnumber"
-										>
-											Aadhaar Number
-										</label>
 										<div className="help-block with-errors"></div>
 									</div>
 									<div className="form-group">
@@ -105,17 +90,12 @@ const Kyc_lender = () => {
 											className="form-control-input"
 											id="txtBankAcc"
 											required
+											placeholder="Bank Account Number"
 											value={bank_acc}
 											onChange={(e) =>
 												setBankAcc(e.target.value)
 											}
 										/>
-										<label
-											className="label-control"
-											htmlFor="nBankacc"
-										>
-											Bank Account Number
-										</label>
 										<div className="help-block with-errors"></div>
 									</div>
 									<div className="form-group">
