@@ -46,7 +46,7 @@ export default function Signup() {
 							<h1 style={{ fontSize: 40 }}>Sign Up</h1>
 							<p>
 								Already a user? Then{" "}
-								<Link href="/main_login">
+								<Link href="/login">
 									<a className="white">Log In</a>
 								</Link>
 							</p>
