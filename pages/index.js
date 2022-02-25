@@ -64,7 +64,7 @@ const Home = () => {
 				/>
 			</svg>
 
-			<div className="cards-1">
+			<div id = "P2P" className="cards-1">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
@@ -248,12 +248,9 @@ const Home = () => {
 														</div>
 													</li>
 												</ul>
-												<a
-													className="btn-solid-reg popup-with-move-anim"
-													href="/signup"
-												>
-													SIGN UP
-												</a>
+												<Link href="\signup">
+														<a className="btn-solid-reg popup-with-move-anim">Sign Up</a>
+												</Link>
 											</div>
 										</div>
 									</div>
@@ -278,7 +275,7 @@ const Home = () => {
 										<div className="col-lg-6">
 											<div className="text-container">
 												<h3>
-													Why Invest at Credere?
+													Why Invest at Crēdere?
 												</h3>
 												
 												<ul className="list-unstyled li-space-lg">
@@ -303,12 +300,9 @@ const Home = () => {
 														</div>
 													</li>
 												</ul>
-												<a
-													className="btn-solid-reg popup-with-move-anim"
-													href="/signup"
-												>
-													SIGN UP
-												</a>
+												<Link href="\signup">
+														<a className="btn-solid-reg popup-with-move-anim">Sign Up</a>
+												</Link>
 											</div>
 										</div>
 									</div>
@@ -354,12 +348,9 @@ const Home = () => {
 														</div>
 													</li>
 												</ul>
-												<a
-													className="btn-solid-reg popup-with-move-anim"
-													href="/signup"
-												>
-													SIGN UP
-												</a>
+												<Link href="\signup">
+														<a className="btn-solid-reg popup-with-move-anim">Sign Up</a>
+												</Link>
 											</div>
 										</div>
 									</div>

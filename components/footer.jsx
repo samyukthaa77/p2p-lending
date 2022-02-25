@@ -25,12 +25,12 @@ const Footer = () => {
 					transform="translate(0 -0.188)"
 				/>
 			</svg>
-			<div className="footer">
+			<div id = "footer" className="footer">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-4">
 							<div className="footer-col first">
-								<h4>About Credere</h4>
+								<h4>About Crēdere</h4>
 								<p className="p-small">
 									{
 										"An emerging peer to peer lending platform supporting both the borrowers with diverse loan options and the lenders with added on benefits to support verified borrowers"
