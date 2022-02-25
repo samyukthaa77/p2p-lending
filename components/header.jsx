@@ -52,17 +52,17 @@ const Header = () => {
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#features"
+									href="#P2P"
 								>
-									FEATURES
+									WHAT IS P2P ?
 								</a>
 							</li>
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#details"
+									href="#features"
 								>
-									DETAILS
+									FEATURES
 								</a>
 							</li>
 
@@ -75,7 +75,7 @@ const Header = () => {
 									aria-haspopup="true"
 									aria-expanded="false"
 								>
-									VIDEO
+									TOOLS
 								</a>
 								<div
 									className="dropdown-menu"
@@ -86,36 +86,19 @@ const Header = () => {
 										href="article-details.html"
 									>
 										<span className="item-text">
-											ARTICLE DETAILS
+											LOAN CALCULATOR
 										</span>
 									</a>
-									<div className="dropdown-items-divide-hr"></div>
-									<a
-										className="dropdown-item"
-										href="terms-conditions.html"
-									>
-										<span className="item-text">
-											TERMS CONDITIONS
-										</span>
-									</a>
-									<div className="dropdown-items-divide-hr"></div>
-									<a
-										className="dropdown-item"
-										href="privacy-policy.html"
-									>
-										<span className="item-text">
-											PRIVACY POLICY
-										</span>
-									</a>
+									
 								</div>
 							</li>
 
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#pricing"
+									href="#footer"
 								>
-									PRICING
+									CONTACT US
 								</a>
 							</li>
 						</ul>

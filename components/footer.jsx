@@ -25,7 +25,7 @@ const Footer = () => {
 					transform="translate(0 -0.188)"
 				/>
 			</svg>
-			<div className="footer">
+			<div id = "footer" className="footer">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-4">
