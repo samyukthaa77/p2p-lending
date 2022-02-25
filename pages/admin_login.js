@@ -16,6 +16,7 @@ const Login = () => {
 				method: "login",
 				email: email,
 				password: md5(password),
+				type: "borrower",
 			}
 		);
 
@@ -27,8 +28,6 @@ const Login = () => {
 		}
 	};
 
-	
-	
 	return (
 		<>
 			<Header />
@@ -37,80 +36,60 @@ const Login = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
-							<h1>Log In</h1>
-							<p>
-								{"Don't have a password? Then "}
-								<Link href="/signup">
-									<a className="white">Sign Up</a>
-								</Link>
-							</p>
-							
-							
+							<h1 style={{ marginBottom: 40 }}>Admin Log In</h1>
+							<div className="form-container">
+								<div>
+									<div className="form-group">
+										<input
+											type="email"
+											className="form-control-input"
+											id="lemail"
+											required
+											placeholder="Email"
+											value={email}
+											onChange={(e) =>
+												setEmail(e.target.value)
+											}
+										/>
+										<div className="help-block with-errors"></div>
+									</div>
+									<div className="form-group">
+										<input
+											type="text"
+											className="form-control-input"
+											id="lpassword"
+											required
+											placeholder="Login"
+											value={password}
+											onChange={(e) =>
+												setPassword(e.target.value)
+											}
+										/>
+										<div className="help-block with-errors"></div>
+									</div>
+									<div className="form-group">
+										<button
+											type="submit"
+											className="form-control-submit-button"
+											onClick={login}
+										>
+											LOG IN
+										</button>
+									</div>
+									<div className="form-message">
+										<div
+											id="lmsgSubmit"
+											className="h3 text-center hidden"
+										></div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-			<body class="form">
-    
-    			<div>
-        			<div>
-            			<div >
-                			<div class="form-container">
-                    			<div class="form-group">
-
-                            			<div id="admin_login" class="form ">
-											<div className="field-wrapper input">
-												<label for="mail-id">MAIL-ID</label>
-												<input
-													type="email"
-													className="form-control-input"
-													placeholder="Mail"
-													id="lemail"
-													class="form-control"
-													required
-													value={email}
-													onChange={(e) =>
-														setEmail(e.target.value)
-													}
-												/>		
-												<label
-													className="label-control"
-													htmlFor="lemail"
-												>
-													Email
-												</label>
-												<div className="help-block with-errors"></div>
-											</div>
-                                			<div id="password-field" class="field-wrapper input mb-2">
-                                    			<div class="d-flex justify-content-between">
-                                        			<label for="password">ADMIN PASSWORD</label>
-                                    			</div>
-                                    			<input id="password" name="password" type="password" class="form-control" placeholder="Password"></input>
-                                			</div>
-                                			<div class="d-sm-flex justify-content-between">
-                                    			<div class="field-wrapper">
-                                        			<button type="submit" class="btn btn-primary" value="">Log In</button>
-                                    			</div>
-                                			</div>
-
-                            			</div>
-                        			
-
-                    			</div>                    
-                			</div>
-            			</div>
-        			</div>
-    			</div>
-				
-        
-    			
-
-    			
-
-			</body>
 		</>
 	);
-	
 };
 
 export default Login;
