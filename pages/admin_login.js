@@ -16,7 +16,7 @@ const Login = () => {
 				method: "login",
 				email: email,
 				password: md5(password),
-				type: "borrower",
+				type: "admin",
 			}
 		);
 
