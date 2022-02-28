@@ -52,30 +52,30 @@ const Header = () => {
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#features"
+									href="#P2P"
 								>
-									FEATURES
+									WHAT IS P2P ?
 								</a>
 							</li>
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#details"
+									href="#features"
 								>
-									DETAILS
+									FEATURES
 								</a>
 							</li>
 
 							<li className="nav-item dropdown">
 								<a
 									className="nav-link dropdown-toggle page-scroll"
-									href="#video"
+									href="#"
 									id="navbarDropdown"
 									role="button"
 									aria-haspopup="true"
 									aria-expanded="false"
 								>
-									VIDEO
+									TOOLS
 								</a>
 								<div
 									className="dropdown-menu"
@@ -83,39 +83,22 @@ const Header = () => {
 								>
 									<a
 										className="dropdown-item"
-										href="article-details.html"
+										href="/loan_calculator"
 									>
 										<span className="item-text">
-											ARTICLE DETAILS
+											LOAN CALCULATOR
 										</span>
 									</a>
-									<div className="dropdown-items-divide-hr"></div>
-									<a
-										className="dropdown-item"
-										href="terms-conditions.html"
-									>
-										<span className="item-text">
-											TERMS CONDITIONS
-										</span>
-									</a>
-									<div className="dropdown-items-divide-hr"></div>
-									<a
-										className="dropdown-item"
-										href="privacy-policy.html"
-									>
-										<span className="item-text">
-											PRIVACY POLICY
-										</span>
-									</a>
+									
 								</div>
 							</li>
 
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="#pricing"
+									href="#footer"
 								>
-									PRICING
+									CONTACT US
 								</a>
 							</li>
 						</ul>
