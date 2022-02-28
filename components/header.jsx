@@ -43,17 +43,11 @@ const Header = () => {
 								<Link href="/">
 									<a className="nav-link page-scroll">
 										HOME{" "}
-										<span className="sr-only">
-											(current)
-										</span>
 									</a>
 								</Link>
 							</li>
 							<li className="nav-item">
-								<a
-									className="nav-link page-scroll"
-									href="#P2P"
-								>
+								<a className="nav-link page-scroll" href="#P2P">
 									WHAT IS P2P ?
 								</a>
 							</li>
@@ -89,7 +83,6 @@ const Header = () => {
 											LOAN CALCULATOR
 										</span>
 									</a>
-									
 								</div>
 							</li>
 

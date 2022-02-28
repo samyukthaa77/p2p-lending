@@ -23,7 +23,11 @@ const LoginCompleted = () => {
 
 		console.log(data);
 		if (data.status == "1") {
-			Router.push("/");
+			if (data.type == "lender") {
+				Router.push("/kyc_lender");
+			} else if (data.type == "borrower") {
+				Router.push("/kyc_borrower");
+			}
 		} else {
 			alert(data.message);
 		}
