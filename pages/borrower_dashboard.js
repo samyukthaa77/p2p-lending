@@ -11,7 +11,7 @@ const b_dashboard = () => {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="above-heading">Borrower</div>
+                    <div class="above-heading">BORROWER</div>
                     <h2 class="h2-heading">DASHBOARD</h2>
                     <p class="p-heading">Quick and Hassle free Funding with Low Interest Rate and No Prepayment Penalty</p>
                 </div> 
@@ -25,14 +25,12 @@ const b_dashboard = () => {
                             <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Apply Loan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-chart-bar"></i>Loan Progress</a>
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-chart-bar"></i>Loan Details</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Guarantor Details</a>
                         </li>
                     </ul>
-                
-
                 
                     <div class="tab-content" id="argoTabsContent">
 
@@ -151,6 +149,21 @@ const b_dashboard = () => {
 										</label>
 										<div class="help-block with-errors"></div>
 									</div>
+									<div class="form-group">
+										<input
+											type="text"
+											class="form-control-input"
+											id="nempno"
+											required
+										/>
+										<label
+											class="label-control"
+											for="nempno"
+										>
+											Employer Phone Number
+										</label>
+										<div class="help-block with-errors"></div>
+									</div>
                                         <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">APPLY</a>
                                     </div> 
                                 </div>
@@ -165,23 +178,8 @@ const b_dashboard = () => {
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="text-container">
-                                        <h3>Analytics Control Panel</h3>
-                                        <p>Analytics control  panel is important for every marketing team so it's beed implemented from the begging and designed to produce reports based on very little input information.</p>
-                                        <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">If you set it up correctly you will get acces to great intel</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">Easy to integrate in your websites and landing pages</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-square"></i>
-                                                <div class="media-body">The generated reports are important for your strategy</div>
-                                            </li>
-                                        </ul>
-                                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-3">LIGHTBOX</a>
+									<p>No loans applied yet</p>
+                                        <a class="btn-solid-reg page-scroll" href="#tab-1">Apply Loan</a>
                                     </div> 
                                 </div>
                             </div> 
