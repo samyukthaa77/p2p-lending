@@ -36,28 +36,28 @@ const Borrower_dashboard = () => {
 	return (
 		<>
 			<Header />
-			<div id="features" class="tabs" style={{ marginTop: 100 }}>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="above-heading">Borrower</div>
-							<h2 class="h2-heading">DASHBOARD</h2>
-							<p class="p-heading">
+			<div id="features" className="tabs" style={{ marginTop: 100 }}>
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="above-heading">Borrower</div>
+							<h2 className="h2-heading">DASHBOARD</h2>
+							<p className="p-heading">
 								Quick and Hassle free Funding with Low Interest
 								Rate and No Prepayment Penalty
 							</p>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-lg-12">
+					<div className="row">
+						<div className="col-lg-12">
 							<ul
-								class="nav nav-tabs"
+								className="nav nav-tabs"
 								id="argoTabs"
 								role="tablist"
 							>
-								<li class="nav-item">
+								<li className="nav-item">
 									<a
-										class="nav-link active"
+										className="nav-link"
 										id="nav-tab-1"
 										data-toggle="tab"
 										href="#tab-1"
@@ -65,12 +65,13 @@ const Borrower_dashboard = () => {
 										aria-controls="tab-1"
 										aria-selected="true"
 									>
-										<i class="fas fa-list"></i>Apply Loan
+										<i className="fas fa-list"></i>Apply
+										Loan
 									</a>
 								</li>
-								<li class="nav-item">
+								<li className="nav-item">
 									<a
-										class="nav-link"
+										className="nav-link active"
 										id="nav-tab-2"
 										data-toggle="tab"
 										href="#tab-2"
@@ -78,13 +79,13 @@ const Borrower_dashboard = () => {
 										aria-controls="tab-2"
 										aria-selected="false"
 									>
-										<i class="fas fa-chart-bar"></i>Loan
+										<i className="fas fa-chart-bar"></i>Loan
 										Progress
 									</a>
 								</li>
-								<li class="nav-item">
+								<li className="nav-item">
 									<a
-										class="nav-link"
+										className="nav-link"
 										id="nav-tab-3"
 										data-toggle="tab"
 										href="#tab-3"
@@ -92,36 +93,36 @@ const Borrower_dashboard = () => {
 										aria-controls="tab-3"
 										aria-selected="false"
 									>
-										<i class="fas fa-envelope-open-text"></i>
+										<i className="fas fa-envelope-open-text"></i>
 										Guarantor Details
 									</a>
 								</li>
 							</ul>
 
-							<div class="tab-content" id="argoTabsContent">
+							<div className="tab-content" id="argoTabsContent">
 								<div
-									class="tab-pane fade show active"
+									className="tab-pane fade show active"
 									id="tab-1"
 									role="tabpanel"
 									aria-labelledby="tab-1"
 								>
 									{/* APPLY LOAN */}
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="image-container">
+									<div className="row">
+										<div className="col-lg-6">
+											<div className="image-container">
 												<img
-													class="img-fluid"
+													className="img-fluid"
 													src="images/apply loan.svg"
 													alt="alternative"
 												/>
 											</div>
 										</div>
-										<div class="col-lg-6">
-											<div class="text-container">
-												<div class="form-group">
+										<div className="col-lg-6">
+											<div className="text-container">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nloantype"
 														required
 														placeholder="User ID"
@@ -132,12 +133,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nloantype"
 														required
 														placeholder="Loan Type"
@@ -148,12 +149,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nloanamt"
 														required
 														placeholder="Loan Amount"
@@ -164,12 +165,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nphno"
 														required
 														placeholder="Contact Number"
@@ -180,12 +181,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="njobtitle"
 														required
 														placeholder="Job Title"
@@ -196,12 +197,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nincome"
 														required
 														placeholder="Monthly Net income"
@@ -212,12 +213,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nincomesource"
 														required
 														placeholder="Income Source"
@@ -228,12 +229,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nempname"
 														required
 														placeholder="Employer Name"
@@ -244,12 +245,12 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nempno"
 														required
 														placeholder="Employer Contact"
@@ -260,10 +261,10 @@ const Borrower_dashboard = () => {
 															)
 														}
 													/>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
 												<a
-													class="btn-solid-reg popup-with-move-anim"
+													className="btn-solid-reg popup-with-move-anim"
 													href="#"
 													onClick={apply_loan}
 												>
@@ -274,24 +275,24 @@ const Borrower_dashboard = () => {
 									</div>
 								</div>
 								<div
-									class="tab-pane fade"
+									className="tab-pane fade"
 									id="tab-2"
 									role="tabpanel"
 									aria-labelledby="tab-2"
 								>
 									{/* LOAN PROGRESS */}
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="image-container">
+									<div className="row">
+										<div className="col-lg-6">
+											<div className="image-container">
 												<img
-													class="img-fluid"
+													className="img-fluid"
 													src="images/progress.svg"
 													alt="alternative"
 												/>
 											</div>
 										</div>
-										<div class="col-lg-6">
-											<div class="text-container">
+										<div className="col-lg-6">
+											<div className="text-container">
 												<h3>Analytics Control Panel</h3>
 												<p>
 													Analytics control panel is
@@ -302,27 +303,27 @@ const Borrower_dashboard = () => {
 													reports based on very little
 													input information.
 												</p>
-												<ul class="list-unstyled li-space-lg">
-													<li class="media">
-														<i class="fas fa-square"></i>
-														<div class="media-body">
+												<ul className="list-unstyled li-space-lg">
+													<li className="media">
+														<i className="fas fa-square"></i>
+														<div className="media-body">
 															If you set it up
 															correctly you will
 															get acces to great
 															intel
 														</div>
 													</li>
-													<li class="media">
-														<i class="fas fa-square"></i>
-														<div class="media-body">
+													<li className="media">
+														<i className="fas fa-square"></i>
+														<div className="media-body">
 															Easy to integrate in
 															your websites and
 															landing pages
 														</div>
 													</li>
-													<li class="media">
-														<i class="fas fa-square"></i>
-														<div class="media-body">
+													<li className="media">
+														<i className="fas fa-square"></i>
+														<div className="media-body">
 															The generated
 															reports are
 															important for your
@@ -331,7 +332,7 @@ const Borrower_dashboard = () => {
 													</li>
 												</ul>
 												<a
-													class="btn-solid-reg popup-with-move-anim"
+													className="btn-solid-reg popup-with-move-anim"
 													href="#details-lightbox-3"
 												>
 													LIGHTBOX
@@ -341,17 +342,17 @@ const Borrower_dashboard = () => {
 									</div>
 								</div>
 								<div
-									class="tab-pane fade"
+									className="tab-pane fade"
 									id="tab-3"
 									role="tabpanel"
 									aria-labelledby="tab-3"
 								>
 									{/* GUARANTOR DETAILS */}
-									<div class="row">
-										<div class="col-lg-6">
-											<div class="image-container">
+									<div className="row">
+										<div className="col-lg-6">
+											<div className="image-container">
 												<img
-													class="img-fluid"
+													className="img-fluid"
 													src="images/guarantor.svg"
 													alt="alternative"
 													style={{
@@ -362,100 +363,100 @@ const Borrower_dashboard = () => {
 												/>
 											</div>
 										</div>
-										<div class="col-lg-6">
-											<div class="text-container">
-												<div class="form-group">
+										<div className="col-lg-6">
+											<div className="text-container">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nname"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nname"
 													>
 														Name
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nemail"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nemail"
 													>
 														Email
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="nphno"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nphno"
 													>
 														Phone Number
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="txtPANCard"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nPAN"
 													>
 														Permanent Account Number
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="txtAadhaarnumber"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nAadhaarnumber"
 													>
 														Aadhaar Number
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
-												<div class="form-group">
+												<div className="form-group">
 													<input
 														type="text"
-														class="form-control-input"
+														className="form-control-input"
 														id="txtBankAcc"
 														required
 													/>
 													<label
-														class="label-control"
+														className="label-control"
 														for="nBankacc"
 													>
 														Bank Account Number
 													</label>
-													<div class="help-block with-errors"></div>
+													<div className="help-block with-errors"></div>
 												</div>
 												<a
-													class="btn-solid-reg popup-with-move-anim"
+													className="btn-solid-reg popup-with-move-anim"
 													href="#details-lightbox-2"
 												>
 													UPDATE PROFILE

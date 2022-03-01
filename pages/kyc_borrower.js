@@ -45,12 +45,12 @@ const Kyc_borrower = () => {
 		<>
 			<Header />
 
-			<div class="form" style={{ marginTop: 100 }}>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="text-container">
-								<div class="above-heading">BORROWER</div>
+			<div className="form" style={{ marginTop: 100 }}>
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="text-container">
+								<div className="above-heading">BORROWER</div>
 								<h2>KNOW YOUR CUSTOMER</h2>
 
 								<div
@@ -58,10 +58,10 @@ const Kyc_borrower = () => {
 									data-toggle="validator"
 									data-focus="false"
 								>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="nAddress"
 											required
 											placeholder="User ID"
@@ -70,12 +70,12 @@ const Kyc_borrower = () => {
 												setId(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="nAddress"
 											required
 											placeholder="Address"
@@ -84,12 +84,12 @@ const Kyc_borrower = () => {
 												setAddress(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtProofadd"
 											required
 											placeholder="Proof of Address"
@@ -98,11 +98,11 @@ const Kyc_borrower = () => {
 												setAddressProof(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<label
-											for="DOB"
+											htmlFor="DOB"
 											style={{
 												marginRight: 30,
 												marginLeft: 5,
@@ -120,10 +120,10 @@ const Kyc_borrower = () => {
 											}
 										></input>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtrelation"
 											required
 											placeholder="Son/Daughter/Wife/Husband of"
@@ -132,12 +132,12 @@ const Kyc_borrower = () => {
 												setRelationship(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtOccupation"
 											required
 											placeholder="Occupation"
@@ -146,12 +146,12 @@ const Kyc_borrower = () => {
 												setOccupation(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtPANCard"
 											required
 											placeholder="Permanent Account Number"
@@ -160,12 +160,12 @@ const Kyc_borrower = () => {
 												setPan(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtAadhaarnumber"
 											required
 											placeholder="Aadhar number"
@@ -174,12 +174,12 @@ const Kyc_borrower = () => {
 												setAadhar(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtannualincome"
 											required
 											placeholder="Annual Income"
@@ -188,12 +188,12 @@ const Kyc_borrower = () => {
 												setIncome(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtAge"
 											required
 											placeholder="Age"
@@ -202,12 +202,12 @@ const Kyc_borrower = () => {
 												setAge(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtEmproof"
 											required
 											placeholder="Employment Proof"
@@ -216,12 +216,12 @@ const Kyc_borrower = () => {
 												setEmpProof(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<input
 											type="text"
-											class="form-control-input"
+											className="form-control-input"
 											id="txtBankAcc"
 											required
 											placeholder="Bank Account Number"
@@ -230,9 +230,9 @@ const Kyc_borrower = () => {
 												setBankAcc(e.target.value)
 											}
 										/>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group checkbox">
+									<div className="form-group checkbox">
 										<input
 											type="checkbox"
 											id="nterms"
@@ -247,21 +247,21 @@ const Kyc_borrower = () => {
 										<a href="terms-conditions.html">
 											Terms Conditions
 										</a>
-										<div class="help-block with-errors"></div>
+										<div className="help-block with-errors"></div>
 									</div>
-									<div class="form-group">
+									<div className="form-group">
 										<button
 											type="submit"
-											class="form-control-submit-button"
+											className="form-control-submit-button"
 											onClick={kyc_borrower}
 										>
 											SUBMIT
 										</button>
 									</div>
-									<div class="form-message">
+									<div className="form-message">
 										<div
 											id="nmsgSubmit"
-											class="h3 text-center hidden"
+											className="h3 text-center hidden"
 										></div>
 									</div>
 								</div>
