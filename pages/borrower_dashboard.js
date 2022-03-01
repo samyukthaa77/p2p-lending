@@ -7,7 +7,7 @@ const b_dashboard = () => {
 	return (
 		<>
 			<Header />
-       <div id="features" class="tabs"style={{ marginTop: 100 }}>
+       <div id="features" class="tabs"style={{ marginTop: 100 }} >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
