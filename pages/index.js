@@ -64,7 +64,7 @@ const Home = () => {
 				/>
 			</svg>
 
-			<div id = "P2P" className="cards-1">
+			<div id = "P2P"className="cards-1">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
