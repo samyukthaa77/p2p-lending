@@ -28,17 +28,7 @@ const admin_dashboard = () => {
                     <div class="row">
                         <div class="col-lg-12">
             
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-title">USER APPROVAL</div>
-                                    <div class="frequency">Borrowers & Lenders</div>
-                                    <div class="divider"></div>
-                                    
-                                    <div class="button-wrapper">
-                                        <a class="btn-solid-reg page-scroll" href="/user_approval">CHECK USERS</a>
-                                    </div>
-                                </div>
-                            </div> 
+                            
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-title">LOAN APPROVAL</div>
@@ -47,6 +37,21 @@ const admin_dashboard = () => {
                                     
                                     <div class="button-wrapper">
                                         <a class="btn-solid-reg page-scroll" href="/loan_approval">OVERVIEW LOANS</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">USER APPROVAL</div>
+                                    <div class="frequency">Borrowers & Lenders</div>
+                                    <div class="divider"></div>
+                                    
+                                    <div class="button-wrapper">
+                                        <a class="btn-solid-reg page-scroll" href="/borrower_approval">CHECK BORROWERS</a>
+                                    </div>
+                                    <br></br>
+                                    <div class="button-wrapper">
+                                        <a class="btn-solid-reg page-scroll" href="/lender_approval">CHECK LENDERS</a>
                                     </div>
                                 </div>
                             </div> 
