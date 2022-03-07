@@ -33,6 +33,24 @@ const Borrower_dashboard = () => {
 		console.log(data);
 	};
 
+	// const borrower_details = async () => {
+	// 	const { data } = await axios.post(
+	// 		"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production/p2p-api-resource",
+	// 		{
+	// 			method: "apply_loan",
+	// 			b_id: b_id,
+	// 			name: name,
+	// 			email: email,
+	// 			contact_no: contact_no,
+	// 			pan: pan,
+	// 			aadhar: aadhar,
+	// 			bank_acc: bank_acc,
+	// 		}
+	// 	);
+
+	// 	console.log(data);
+	// };
+
 	return (
 		<>
 			<Header />
@@ -57,7 +75,7 @@ const Borrower_dashboard = () => {
 							>
 								<li className="nav-item">
 									<a
-										className="nav-link"
+										className="nav-link active"
 										id="nav-tab-1"
 										data-toggle="tab"
 										href="#tab-1"
@@ -71,7 +89,7 @@ const Borrower_dashboard = () => {
 								</li>
 								<li className="nav-item">
 									<a
-										className="nav-link active"
+										className="nav-link"
 										id="nav-tab-2"
 										data-toggle="tab"
 										href="#tab-2"
@@ -371,13 +389,30 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="nname"
 														required
+														placeholder="Borrower ID"
+														value={b_id}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nname"
-													>
-														Name
-													</label>
+													<div className="help-block with-errors"></div>
+												</div>
+												<div className="form-group">
+													<input
+														type="text"
+														className="form-control-input"
+														id="nname"
+														required
+														placeholder="Name"
+														value={name}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
+													/>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -386,13 +421,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="nemail"
 														required
+														placeholder="Email"
+														value={email}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nemail"
-													>
-														Email
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -401,13 +437,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="nphno"
 														required
+														placeholder="Contact Number"
+														value={contact_no}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nphno"
-													>
-														Phone Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -416,13 +453,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtPANCard"
 														required
+														placeholder="PAN"
+														value={pan}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nPAN"
-													>
-														Permanent Account Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -431,13 +469,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtAadhaarnumber"
 														required
+														placeholder="Aadhar Number"
+														value={aadhar}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nAadhaarnumber"
-													>
-														Aadhaar Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -446,18 +485,20 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtBankAcc"
 														required
+														placeholder="Bank account number"
+														value={bank_acc}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														for="nBankacc"
-													>
-														Bank Account Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<a
 													className="btn-solid-reg popup-with-move-anim"
 													href="#details-lightbox-2"
+													onClick={borrower_details}
 												>
 													UPDATE PROFILE
 												</a>
