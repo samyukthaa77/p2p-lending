@@ -18,6 +18,12 @@ const Borrower_dashboard = () => {
 	const [employer_name, setEmployerName] = useState("");
 	const [employer_contact, setEmployerContact] = useState("");
 
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [pan, setPan] = useState("");
+	const [aadhar, setAadhar] = useState("");
+	const [bank_acc, setBankAcc] = useState("");
+
 	const apply_loan = async () => {
 		const { data } = await axios.post(
 			"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production/p2p-api-resource",
@@ -32,6 +38,24 @@ const Borrower_dashboard = () => {
 				income_source: income_source,
 				employer_name: employer_name,
 				employer_contact: employer_contact,
+			}
+		);
+
+		console.log(data);
+	};
+
+	const guarantor_details = async () => {
+		const { data } = await axios.post(
+			"https://qiof3kyyq0.execute-api.us-west-2.amazonaws.com/production/p2p-api-resource",
+			{
+				method: "guarantor_details",
+				id: id,
+				name: name,
+				email: email,
+				contact_no: contact_no,
+				pan: pan,
+				aadhar: aadhar,
+				bank_acc: bank_acc,
 			}
 		);
 
@@ -339,15 +363,32 @@ const Borrower_dashboard = () => {
 													<input
 														type="text"
 														className="form-control-input"
+														id="nid"
+														required
+														placeholder="Borrower ID"
+														value={id}
+														onChange={(e) =>
+															setId(
+																e.target.value
+															)
+														}
+													/>
+													<div className="help-block with-errors"></div>
+												</div>
+												<div className="form-group">
+													<input
+														type="text"
+														className="form-control-input"
 														id="nname"
 														required
+														placeholder="Name"
+														value={name}
+														onChange={(e) =>
+															setName(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nname"
-													>
-														Name
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -356,13 +397,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="nemail"
 														required
+														placeholder="Email"
+														value={email}
+														onChange={(e) =>
+															setEmail(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nemail"
-													>
-														Email
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -371,13 +413,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="nphno"
 														required
+														placeholder="Contact Number"
+														value={contact_no}
+														onChange={(e) =>
+															setContactNo(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nphno"
-													>
-														Phone Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -386,13 +429,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtPANCard"
 														required
+														placeholder="PAN"
+														value={pan}
+														onChange={(e) =>
+															setPan(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nPAN"
-													>
-														Permanent Account Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -401,13 +445,14 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtAadhaarnumber"
 														required
+														placeholder="Aadhar Number"
+														value={aadhar}
+														onChange={(e) =>
+															setAadhar(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nAadhaarnumber"
-													>
-														Aadhaar Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<div className="form-group">
@@ -416,18 +461,20 @@ const Borrower_dashboard = () => {
 														className="form-control-input"
 														id="txtBankAcc"
 														required
+														placeholder="Bank Account Number"
+														value={bank_acc}
+														onChange={(e) =>
+															setBankAcc(
+																e.target.value
+															)
+														}
 													/>
-													<label
-														className="label-control"
-														htmlFor="nBankacc"
-													>
-														Bank Account Number
-													</label>
 													<div className="help-block with-errors"></div>
 												</div>
 												<a
 													className="btn-solid-reg popup-with-move-anim"
-													href="#details-lightbox-2"
+													href="#"
+													onClick={guarantor_details}
 												>
 													UPDATE PROFILE
 												</a>
