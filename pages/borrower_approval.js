@@ -9,22 +9,22 @@ const borrower_approval = () => {
 	return (
 		<>
 			<Header />
-			<header id="header" class="ex-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
+			<header id="header" className="ex-header">
+				<div className="container">
+					<div className="row">
+						<div className="col-md-12">
 							<h1>APPROVAL OF BORROWERS</h1>
 						</div>
 					</div>
 				</div>
 			</header>
-			<div class="ex-basic-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="breadcrumbs">
+			<div className="ex-basic-1">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="breadcrumbs">
 								<a href="/admin_dashboard">Home</a>
-								<i class="fa fa-angle-double-right"></i>
+								<i className="fa fa-angle-double-right"></i>
 								<span>Borrower Approval</span>
 							</div>
 						</div>
@@ -32,10 +32,10 @@ const borrower_approval = () => {
 				</div>
 			</div>
 
-			<div class="ex-basic-2">
-				<div class="container">
-					<div class="row">
-						<div class="text-container">
+			<div className="ex-basic-2">
+				<div className="container">
+					<div className="row">
+						<div className="text-container">
 							<main>
 								<table border="1.5">
 									<tr>
@@ -56,14 +56,14 @@ const borrower_approval = () => {
 										<td>Maria Anders</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -79,14 +79,14 @@ const borrower_approval = () => {
 										<td>Germany</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -97,7 +97,7 @@ const borrower_approval = () => {
 							</main>
 						</div>
 
-						<a class="btn-outline-reg" href="/admin_dashboard">
+						<a className="btn-outline-reg" href="/admin_dashboard">
 							BACK
 						</a>
 					</div>

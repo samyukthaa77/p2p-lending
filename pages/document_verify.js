@@ -9,22 +9,22 @@ const document_verify = () => {
 	return (
 		<>
 			<Header />
-			<header id="header" class="ex-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
+			<header id="header" className="ex-header">
+				<div className="container">
+					<div className="row">
+						<div className="col-md-12">
 							<h1>DOCUMENT VERIFICATION</h1>
 						</div>
 					</div>
 				</div>
 			</header>
-			<div class="ex-basic-1">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="breadcrumbs">
+			<div className="ex-basic-1">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
+							<div className="breadcrumbs">
 								<a href="/admin_dashboard">Home</a>
-								<i class="fa fa-angle-double-right"></i>
+								<i className="fa fa-angle-double-right"></i>
 								<span>Borrower Approval</span>
 							</div>
 						</div>
@@ -32,10 +32,10 @@ const document_verify = () => {
 				</div>
 			</div>
 
-			<div class="ex-basic-2">
-				<div class="container">
-					<div class="row">
-						<div class="text-container">
+			<div className="ex-basic-2">
+				<div className="container">
+					<div className="row">
+						<div className="text-container">
 							<h3> FOR BORROWERS </h3>
 							<main>
 								<table border="1.5">
@@ -57,14 +57,14 @@ const document_verify = () => {
 										<td>Maria Anders</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -80,14 +80,14 @@ const document_verify = () => {
 										<td>Germany</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -97,7 +97,7 @@ const document_verify = () => {
 								</table>
 							</main>
 						</div>
-						<div class="text-container">
+						<div className="text-container">
 							<h3> FOR LENDERS </h3>
 							<main>
 								<table border="1.5">
@@ -117,14 +117,14 @@ const document_verify = () => {
 										<td>Maria Anders</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -139,14 +139,14 @@ const document_verify = () => {
 										<td>Germany</td>
 										<td>
 											<a
-												class="btn-outline-approve"
+												className="btn-outline-approve"
 												href="/"
 											>
 												Approve
 											</a>
 											<br></br>{" "}
 											<a
-												class="btn-outline-decline"
+												className="btn-outline-decline"
 												href="/"
 											>
 												Decline
@@ -157,7 +157,7 @@ const document_verify = () => {
 							</main>
 						</div>
 					</div>
-					<a class="btn-outline-reg" href="/admin_dashboard">
+					<a className="btn-outline-reg" href="/admin_dashboard">
 						BACK
 					</a>
 				</div>
