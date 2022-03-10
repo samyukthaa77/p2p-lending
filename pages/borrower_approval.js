@@ -23,7 +23,9 @@ const borrower_approval = () => {
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="breadcrumbs">
-								<a href="/admin_dashboard">Home</a>
+								<Link href="/admin_dashboard">
+									<a href="/admin_dashboard">Home</a>
+								</Link>
 								<i className="fa fa-angle-double-right"></i>
 								<span>Borrower Approval</span>
 							</div>
