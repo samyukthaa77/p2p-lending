@@ -26,26 +26,16 @@ const l_display = () => {
 
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-title">BASIC</div>
-                                        <div class="price"><span class="currency">$</span><span class="value">Free</span></div>
-                                        <div class="frequency">14 days trial</div>
+                                        <div class="card-title">Name</div>
+                                        <div class="frequency">ID - </div>
                                         <div class="divider"></div>
                                         <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">Email Marketing Module</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">User Control Management</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-times"></i><div class="media-body">List Building And Cleaning</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-times"></i><div class="media-body">Collected Data Reports</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-times"></i><div class="media-body">Planning And Evaluation</div>
-                                            </li>
+                                            <p>Mobile Number : </p>
+                                            <p>Email - Id : </p>
+                                            <p>No Of Loans Lent :</p>
+                                            <p>Date Of Current Lending :</p>
+                                            <p>Amount Lent : </p>
+                                            <p>Borrower Name :</p>
                                         </ul>
                                         <div class="button-wrapper">
                                             <a class="btn-solid-reg page-scroll" href="#details-1">VIEW </a>
@@ -54,58 +44,37 @@ const l_display = () => {
                                 </div> 
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-title">ADVANCED</div>
-                                        <div class="price"><span class="currency">$</span><span class="value">29.99</span></div>
-                                        <div class="frequency">monthly</div>
+                                        <div class="card-title">Name</div>
+                                        <div class="frequency">ID - </div>
                                         <div class="divider"></div>
                                         <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">Email Marketing Module</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">User Control Management</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">List Building And Cleaning</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-times"></i><div class="media-body">Collected Data Reports</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-times"></i><div class="media-body">Planning And Evaluation</div>
-                                            </li>
+                                            <p>Mobile Number : </p>
+                                            <p>Email - Id : </p>
+                                            <p>No Of Loans Lent :</p>
+                                            <p>Date Of Current Lending :</p>
+                                            <p>Amount Lent : </p>
+                                            <p>Borrower Name :</p>
                                         </ul>
                                         <div class="button-wrapper">
-                                            <a class="btn-solid-reg page-scroll" href="#details-1">VIEW</a>
+                                            <a class="btn-solid-reg page-scroll" href="#details-1">VIEW </a>
                                         </div>
                                     </div>
                                 </div> 
-                                
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="card-title">COMPLETE</div>
-                                        <div class="price"><span class="currency">$</span><span class="value">39.99</span></div>
-                                        <div class="frequency">monthly</div>
+                                        <div class="card-title">Name</div>
+                                        <div class="frequency">ID - </div>
                                         <div class="divider"></div>
                                         <ul class="list-unstyled li-space-lg">
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">Email Marketing Module</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">User Control Management</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">List Building And Cleaning</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">Collected Data Reports</div>
-                                            </li>
-                                            <li class="media">
-                                                <i class="fas fa-check"></i><div class="media-body">Planning And Evaluation</div>
-                                            </li>
+                                            <p>Mobile Number : </p>
+                                            <p>Email - Id : </p>
+                                            <p>No Of Loans Lent :</p>
+                                            <p>Date Of Current Lending :</p>
+                                            <p>Amount Lent : </p>
+                                            <p>Borrower Name :</p>
                                         </ul>
                                         <div class="button-wrapper">
-                                            <a class="btn-solid-reg page-scroll" href="sign-up.html">VIEW</a>
+                                            <a class="btn-solid-reg page-scroll" href="#details-1">VIEW </a>
                                         </div>
                                     </div>
                                 </div> 
