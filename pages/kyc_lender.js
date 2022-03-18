@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Header from "../components/header";
 import axios from "axios";
+import Router from "next/router";
 
 const Kyc_lender = () => {
 	const [id, setId] = useState("");
@@ -25,6 +26,11 @@ const Kyc_lender = () => {
 		);
 
 		console.log(data);
+		if (data.code == "1") {
+			Router.push("/lender_dashboard");
+		} else {
+			alert(data.message);
+		}
 	};
 
 	return (

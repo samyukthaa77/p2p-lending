@@ -42,7 +42,7 @@ const LoginCompleted = () => {
 						<div className="col-lg-12">
 							<h1 style={{ fontSize: 40 }}>Log In</h1>
 							<p>
-								You don&apos;t have a password? Then please{" "}
+								You don&apos;t have an account? Then please{" "}
 								<a className="white" href="/signup ">
 									Sign Up
 								</a>

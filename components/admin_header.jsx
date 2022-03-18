@@ -52,7 +52,7 @@ const admin_header = () => {
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="/borrower_display"
+									href="/b_display"
 								>
 									BORROWERS
 								</a>
@@ -60,7 +60,7 @@ const admin_header = () => {
 							<li className="nav-item">
 								<a
 									className="nav-link page-scroll"
-									href="/lender_display"
+									href="/l_display"
 								>
 									LENDERS
 								</a>

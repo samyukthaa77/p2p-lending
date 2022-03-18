@@ -22,7 +22,7 @@ const Login = () => {
 
 		console.log(data);
 		if (data.status == "1") {
-			Router.push("/");
+			Router.push("/admin_dashboard");
 		} else {
 			alert(data.message);
 		}
